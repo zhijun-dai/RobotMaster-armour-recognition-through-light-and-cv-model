@@ -1,6 +1,6 @@
 # 海康威视工业相机ROS2驱动
 ---
-- 该项目基于 sjtu-cyberc3/hikvision_ros2_driver。
+- 该项目参考 sjtu-cyberc3/hikvision_ros2_driver。
 - 该项目包含了使用 MIT License 和 Apache License 2.0 的部分。
 - 保留所有原始的版权声明。
 ---
