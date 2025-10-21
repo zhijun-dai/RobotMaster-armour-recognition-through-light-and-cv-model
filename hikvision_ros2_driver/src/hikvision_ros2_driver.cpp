@@ -1,6 +1,3 @@
-// hikvision_ros2_driver.cpp
-// ... (保留之前的 include 和 define)
-
 #include <rclcpp/rclcpp.hpp>
 #include <rclcpp/qos.hpp>
 #include <sensor_msgs/msg/image.hpp>
@@ -19,7 +16,7 @@
 #include "hikvision_interface/msg/hik_image_info.hpp"
 #include "rcl_interfaces/msg/set_parameters_result.hpp"
 
-// ... (恢复 MV_CHECK 定义)
+// MV_CHECK 定义
 #ifndef MV_CHECK
 #define MV_CHECK(logger, func, ...)                                                                 \
     do {                                                                                              \
@@ -49,13 +46,13 @@ private:
 
 struct HikvisionDriver::Impl {
     rclcpp::Publisher<HikImageInfo>::SharedPtr p_info_pub;
-    // 额外：内部原始图像发布器，用于触发本节点订阅回调（/image_raw）
+    // 内部原始图像发布器，用于触发本节点订阅回调（/image_raw）
     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr p_img_in_pub;
-    // 1. 添加装甲板检测结果发布器
+    // 添加装甲板检测结果发布器
     rclcpp::Publisher<vision_msgs::msg::Detection2DArray>::SharedPtr p_armor_detections_pub;
-    // 新增：C++预处理图像发布器（调试）
+    // C++预处理图像发布器（调试）
     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr p_armor_preproc_pub;
-    // 新增：发布预处理后的 20x28 单通道 canvas，供 Python 模型直接使用
+    // 发布预处理后的 20x28 单通道 canvas，供 Python 模型直接使用
     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr p_armor_crop_pub;
     std::string camera_name;
 
@@ -69,7 +66,7 @@ struct HikvisionDriver::Impl {
     void* handle = nullptr;
     rclcpp::node_interfaces::OnSetParametersCallbackHandle::SharedPtr param_cb_handle;
 
-    // 2. 添加图像订阅器
+    // 添加图像订阅器
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr p_img_sub;
 
     // 上一次裁剪尺寸（保留但不使用）
@@ -79,7 +76,7 @@ struct HikvisionDriver::Impl {
     static void image_callback_ex(unsigned char *pData, MV_FRAME_OUT_INFO_EX *pFrameInfo, void *pUser);
 };
 
-// 3. 实现图像回调函数，包含装甲板识别逻辑
+// 实现图像回调函数，包含装甲板识别逻辑
 void HikvisionDriver::image_callback(const sensor_msgs::msg::Image::ConstSharedPtr msg) {
     cv_bridge::CvImagePtr cv_ptr;
     try {
@@ -91,7 +88,7 @@ void HikvisionDriver::image_callback(const sensor_msgs::msg::Image::ConstSharedP
 
     cv::Mat img = cv_ptr->image.clone(); // 获取 OpenCV Mat 格式图像
 
-    // --- OpenCV 装甲板识别逻辑（原算法） ---
+    // OpenCV 装甲板识别逻辑（原算法）
     cv::Mat kernel3 = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(3, 3));
     cv::Mat kernel7 = cv::getStructuringElement(cv::MORPH_RECT, cv::Size(7, 7));
 
@@ -265,7 +262,7 @@ void HikvisionDriver::Impl::image_callback_ex(unsigned char *pData, MV_FRAME_OUT
     uint64_t dev_stamp = (uint64_t)pFrameInfo->nDevTimeStampHigh << 32ull | (uint64_t)pFrameInfo->nDevTimeStampLow;
     uint64_t host_stamp = pFrameInfo->nHostTimeStamp;
 
-    // --- 发布 sensor_msgs::msg::Image ---
+    // 发布 sensor_msgs::msg::Image
     auto p_img_raw_msg = std::make_unique<sensor_msgs::msg::Image>();
     if (pFrameInfo->nFrameLen > p_img_raw_msg->data.max_size()) {
         RCLCPP_ERROR_ONCE(node->get_logger(), "image bytes exceed max available size for sensor_msgs::msg::Image");
@@ -312,7 +309,7 @@ void HikvisionDriver::Impl::image_callback_ex(unsigned char *pData, MV_FRAME_OUT
     // 发布到 /image_raw，触发订阅回调 image_callback
     node->pImpl->p_img_in_pub->publish(std::move(p_img_raw_msg));
 
-    // --- 发布 HikImageInfo (原有部分) ---
+    // 发布 HikImageInfo 
     auto p_info_msg = std::make_unique<hikvision_interface::msg::HikImageInfo>();
     {
         uint64_t now_ns = node->now().nanoseconds();
@@ -415,7 +412,7 @@ HikvisionDriver::HikvisionDriver(const rclcpp::NodeOptions &options)
     // 信息发布
     pImpl->p_info_pub = create_publisher<HikImageInfo>("info", qos);
 
-    // --- 相机初始化与抓图回调注册 ---
+    // 相机初始化与抓图回调注册
     MV_CC_DEVICE_INFO_LIST stDeviceList; memset(&stDeviceList, 0, sizeof(MV_CC_DEVICE_INFO_LIST));
     MV_CHECK(logger, MV_CC_EnumDevices, MV_GIGE_DEVICE | MV_USB_DEVICE, &stDeviceList);
 
