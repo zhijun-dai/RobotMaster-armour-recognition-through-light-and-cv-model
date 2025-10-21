@@ -1,5 +1,9 @@
 # 海康威视工业相机ROS2驱动
-
+---
+- 该项目基于 sjtu-cyberc3/hikvision_ros2_driver。
+- 该项目包含了使用 MIT License 和 Apache License 2.0 的部分。
+- 保留所有原始的版权声明。
+---
 - 运行MVS可视化工具，配置相机参数。设置相机名称(user_name, device_id)，本项目将根据相机名称寻找对应设备。
 
 - 用** /opt/MVS/bin/MVS.sh **来打开MVS的客户端
