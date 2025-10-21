@@ -4,7 +4,6 @@
   <name>hikvision_interface</name>
   <version>0.0.0</version>
   <description>ros2 interface for hikvision camera</description>
-  <maintainer email="41963211+xinyang-go@users.noreply.github.com">loc</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
