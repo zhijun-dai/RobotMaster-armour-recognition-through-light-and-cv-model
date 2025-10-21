@@ -1,0 +1,36 @@
+[ 50%] Built target hikvision_ros2_driver_node
+[ 75%] [32mBuilding CXX object CMakeFiles/hikvision_ros2_driver.dir/src/hikvision_ros2_driver.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libhikvision_ros2_driver.so[0m
+[100%] Built target hikvision_ros2_driver
+-- Install configuration: "RelWithDebInfo"
+-- Execute custom install script
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib/hikvision_ros2_driver/hikvision_ros2_driver_node
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver//launch/camera_with_rviz.launch.py
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver//launch/component.launch.yaml
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver//launch/standalone.launch.yaml
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/include/hikvision_ros2_driver/hikvision_ros2_driver.hpp
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/environment/library_path.sh
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/environment/library_path.dsv
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib/libhikvision_ros2_driver.so
+-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/launch/camera_with_rviz.launch.py
+-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/launch/component.launch.yaml
+-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/launch/standalone.launch.yaml
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/ament_index/resource_index/package_run_dependencies/hikvision_ros2_driver
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/ament_index/resource_index/parent_prefix_path/hikvision_ros2_driver
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/environment/ament_prefix_path.sh
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/environment/ament_prefix_path.dsv
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/environment/path.sh
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/environment/path.dsv
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/local_setup.bash
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/local_setup.sh
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/local_setup.zsh
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/local_setup.dsv
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/package.dsv
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/ament_index/resource_index/packages/hikvision_ros2_driver
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/ament_index/resource_index/rclcpp_components/hikvision_ros2_driver
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/cmake/hikvision_ros2_driverConfig.cmake
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/cmake/hikvision_ros2_driverConfig-version.cmake
+-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/package.xml

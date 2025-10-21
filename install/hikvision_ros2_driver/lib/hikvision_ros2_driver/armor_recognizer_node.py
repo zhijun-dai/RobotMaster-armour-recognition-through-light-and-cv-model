@@ -1,0 +1,1 @@
+/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/scripts/armor_recognizer_node.py

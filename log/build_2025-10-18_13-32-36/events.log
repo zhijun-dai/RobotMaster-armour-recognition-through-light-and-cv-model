@@ -1,0 +1,131 @@
+[0.000000] (-) TimerEvent: {}
+[0.000610] (-) JobUnselected: {'identifier': 'hikvision_interface'}
+[0.000684] (hikvision_ros2_driver) JobQueued: {'identifier': 'hikvision_ros2_driver', 'dependencies': OrderedDict({'hikvision_interface': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface'})}
+[0.000763] (hikvision_ros2_driver) JobStarted: {'identifier': 'hikvision_ros2_driver'}
+[0.012823] (hikvision_ros2_driver) JobProgress: {'identifier': 'hikvision_ros2_driver', 'progress': 'cmake'}
+[0.015178] (hikvision_ros2_driver) JobProgress: {'identifier': 'hikvision_ros2_driver', 'progress': 'build'}
+[0.015519] (hikvision_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver', '--', '-j16', '-l16'], 'cwd': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'USER': 'daizhijun', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'LD_LIBRARY_PATH': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib:/opt/ros/jazzy/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/daizhijun', 'OLDPWD': '/home/daizhijun/RobotMaster/hikvision_ros2_integration', 'CHROME_DESKTOP': 'code.desktop', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'TERM_PROGRAM_VERSION': '1.104.3', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ZSH': '/home/daizhijun/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'MANAGERPID': '2832', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'SYSTEMD_EXEC_PID': '3078', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/daizhijun/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy', 'P9K_TTY': 'old', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3850', 'COLORTERM': 'truecolor', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install', 'LOGNAME': 'daizhijun', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '9:28923', '_P9K_SSH_TTY': '/dev/pts/8', 'XDG_SESSION_CLASS': 'user', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'PKG_CONFIG_PATH': '/opt/ros/jazzy/lib/pkgconfig:/opt/ros/jazzy/lib/pkgconfig:', 'ROS_VERSION': '2', 'USER_ZDOTDIR': '/home/daizhijun', 'USERNAME': 'daizhijun', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/daizhijun/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/daizhijun/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/daizhijun-XiaoXinPro-16-IAH10:@/tmp/.ICE-unix/3030,unix/daizhijun-XiaoXinPro-16-IAH10:/tmp/.ICE-unix/3030', 'INVOCATION_ID': '11971d85a40941a7a1e5861d73e9ba28', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/daizhijun/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-2d5724332190b34e.txt', 'PYTHONSTARTUP': '/home/daizhijun/.config/Code/User/workspaceStorage/7a5d3e3c82048ce02fdbb3ad930216f9/ms-python.python/pythonrc.py', 'VSCODE_INJECTION': '1', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.8ZOHE3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-17af5d7fd3.sock', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'AMENT_PREFIX_PATH': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GJS_DEBUG_OUTPUT': 'stderr', 'P9K_SSH': '0', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_NONCE': 'fecfc078-7844-43a8-951f-97c4c47f0972', 'PWD': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'ZDOTDIR': '/home/daizhijun', '_P9K_TTY': '/dev/pts/8', 'PYTHONPATH': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver:/opt/ros/jazzy:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099835] (-) TimerEvent: {}
+[0.132195] (hikvision_ros2_driver) StdoutLine: {'line': b'[ 50%] Built target hikvision_ros2_driver_node\n'}
+[0.142884] (hikvision_ros2_driver) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/hikvision_ros2_driver.dir/src/hikvision_ros2_driver.cpp.o\x1b[0m\n'}
+[0.199999] (-) TimerEvent: {}
+[0.300584] (-) TimerEvent: {}
+[0.401138] (-) TimerEvent: {}
+[0.501766] (-) TimerEvent: {}
+[0.602403] (-) TimerEvent: {}
+[0.702986] (-) TimerEvent: {}
+[0.803540] (-) TimerEvent: {}
+[0.904111] (-) TimerEvent: {}
+[1.004613] (-) TimerEvent: {}
+[1.105162] (-) TimerEvent: {}
+[1.205588] (-) TimerEvent: {}
+[1.306107] (-) TimerEvent: {}
+[1.406579] (-) TimerEvent: {}
+[1.507094] (-) TimerEvent: {}
+[1.607529] (-) TimerEvent: {}
+[1.707910] (-) TimerEvent: {}
+[1.808401] (-) TimerEvent: {}
+[1.908921] (-) TimerEvent: {}
+[2.009319] (-) TimerEvent: {}
+[2.109782] (-) TimerEvent: {}
+[2.210210] (-) TimerEvent: {}
+[2.289486] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:\x1b[m\x1b[K In lambda function:\n'}
+[2.289880] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:275:13:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kthis \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 clause does not guard... [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation\x07-Wmisleading-indentation\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.290076] (hikvision_ros2_driver) StderrLine: {'line': b'  275 |             \x1b[01;35m\x1b[Kif\x1b[m\x1b[K (!result.successful) result.reason = failed_msg; return result;\n'}
+[2.290231] (hikvision_ros2_driver) StderrLine: {'line': b'      |             \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.290402] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:275:65:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K...this statement, but the latter is misleadingly indented as if it were guarded by the \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.290554] (hikvision_ros2_driver) StderrLine: {'line': b'  275 | f (!result.successful) result.reason = failed_msg; \x1b[01;36m\x1b[Kreturn\x1b[m\x1b[K result;\n'}
+[2.290697] (hikvision_ros2_driver) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.290840] (hikvision_ros2_driver) StderrLine: {'line': b'\n'}
+[2.305213] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:\x1b[m\x1b[K In destructor \xe2\x80\x98\x1b[01m\x1b[Kvirtual hikvision_ros2_driver::HikvisionDriver::\x1b[01;32m\x1b[K~HikvisionDriver\x1b[m\x1b[K()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[2.305617] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:376:5:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kthis \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99 clause does not guard... [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation\x07-Wmisleading-indentation\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[2.305804] (hikvision_ros2_driver) StderrLine: {'line': b'  376 |     \x1b[01;35m\x1b[Kif\x1b[m\x1b[K (!pImpl) return; if (pImpl->handle == nullptr) return; auto logger = get_logger();\n'}
+[2.305958] (hikvision_ros2_driver) StderrLine: {'line': b'      |     \x1b[01;35m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.306102] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:376:25:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K...this statement, but the latter is misleadingly indented as if it were guarded by the \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.306251] (hikvision_ros2_driver) StderrLine: {'line': b'  376 |     if (!pImpl) return; \x1b[01;36m\x1b[Kif\x1b[m\x1b[K (pImpl->handle == nullptr) return; auto logger = get_logger();\n'}
+[2.306408] (hikvision_ros2_driver) StderrLine: {'line': b'      |                         \x1b[01;36m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.310293] (-) TimerEvent: {}
+[2.322466] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:\x1b[m\x1b[K At global scope:\n'}
+[2.322910] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:386:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.323137] (hikvision_ros2_driver) StderrLine: {'line': b'  386 |     \x1b[01;31m\x1b[Kif\x1b[m\x1b[K (!pImpl) return;\n'}
+[2.323362] (hikvision_ros2_driver) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.323544] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:387:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kif\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.324604] (hikvision_ros2_driver) StderrLine: {'line': b'  387 |     \x1b[01;31m\x1b[Kif\x1b[m\x1b[K (pImpl->handle == nullptr) return;\n'}
+[2.324851] (hikvision_ros2_driver) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.325014] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:388:19:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[2.325183] (hikvision_ros2_driver) StderrLine: {'line': b'  388 |     auto logger = \x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K();\n'}
+[2.325349] (hikvision_ros2_driver) StderrLine: {'line': b'      |                   \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[2.325489] (hikvision_ros2_driver) StderrLine: {'line': b'      |                   \x1b[32m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\n'}
+[2.325633] (hikvision_ros2_driver) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:26\x1b[m\x1b[K,\n'}
+[2.325774] (hikvision_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171\x1b[m\x1b[K,\n'}
+[2.325913] (hikvision_ros2_driver) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:4\x1b[m\x1b[K:\n'}
+[2.326054] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/jazzy/include/rclcpp/rclcpp/logger.hpp:107:17:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp::get_logger\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[2.326196] (hikvision_ros2_driver) StderrLine: {'line': b'  107 |   friend Logger \x1b[01;36m\x1b[Krclcpp\x1b[m\x1b[K::get_logger(const std::string & name);\n'}
+[2.326368] (hikvision_ros2_driver) StderrLine: {'line': b'      |                 \x1b[01;36m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[2.326509] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:32:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kdo\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.326662] (hikvision_ros2_driver) StderrLine: {'line': b'   32 |     \x1b[01;31m\x1b[Kdo\x1b[m\x1b[K {                                                                                            \\\n'}
+[2.326801] (hikvision_ros2_driver) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.326938] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:390:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KMV_CHECK\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.327086] (hikvision_ros2_driver) StderrLine: {'line': b'  390 |     \x1b[01;36m\x1b[KMV_CHECK\x1b[m\x1b[K(logger, MV_CC_StopGrabbing, pImpl->handle);\n'}
+[2.327230] (hikvision_ros2_driver) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.327385] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:37:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kwhile\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.327524] (hikvision_ros2_driver) StderrLine: {'line': b'   37 |     } \x1b[01;31m\x1b[Kwhile\x1b[m\x1b[K (0)\n'}
+[2.327664] (hikvision_ros2_driver) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.327800] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:390:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KMV_CHECK\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.327940] (hikvision_ros2_driver) StderrLine: {'line': b'  390 |     \x1b[01;36m\x1b[KMV_CHECK\x1b[m\x1b[K(logger, MV_CC_StopGrabbing, pImpl->handle);\n'}
+[2.328077] (hikvision_ros2_driver) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.328214] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:32:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kdo\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.328362] (hikvision_ros2_driver) StderrLine: {'line': b'   32 |     \x1b[01;31m\x1b[Kdo\x1b[m\x1b[K {                                                                                            \\\n'}
+[2.328502] (hikvision_ros2_driver) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.328646] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:391:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KMV_CHECK\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.328790] (hikvision_ros2_driver) StderrLine: {'line': b'  391 |     \x1b[01;36m\x1b[KMV_CHECK\x1b[m\x1b[K(logger, MV_CC_CloseDevice, pImpl->handle);\n'}
+[2.328930] (hikvision_ros2_driver) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.329071] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:37:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kwhile\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.329209] (hikvision_ros2_driver) StderrLine: {'line': b'   37 |     } \x1b[01;31m\x1b[Kwhile\x1b[m\x1b[K (0)\n'}
+[2.329346] (hikvision_ros2_driver) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.329472] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:391:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KMV_CHECK\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.329604] (hikvision_ros2_driver) StderrLine: {'line': b'  391 |     \x1b[01;36m\x1b[KMV_CHECK\x1b[m\x1b[K(logger, MV_CC_CloseDevice, pImpl->handle);\n'}
+[2.329731] (hikvision_ros2_driver) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.329852] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:32:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kdo\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.329983] (hikvision_ros2_driver) StderrLine: {'line': b'   32 |     \x1b[01;31m\x1b[Kdo\x1b[m\x1b[K {                                                                                            \\\n'}
+[2.330110] (hikvision_ros2_driver) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~\x1b[m\x1b[K\n'}
+[2.330242] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:392:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KMV_CHECK\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.330381] (hikvision_ros2_driver) StderrLine: {'line': b'  392 |     \x1b[01;36m\x1b[KMV_CHECK\x1b[m\x1b[K(logger, MV_CC_DestroyHandle, pImpl->handle);\n'}
+[2.330506] (hikvision_ros2_driver) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.330634] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:37:7:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected unqualified-id before \xe2\x80\x98\x1b[01m\x1b[Kwhile\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.330765] (hikvision_ros2_driver) StderrLine: {'line': b'   37 |     } \x1b[01;31m\x1b[Kwhile\x1b[m\x1b[K (0)\n'}
+[2.330890] (hikvision_ros2_driver) StderrLine: {'line': b'      |       \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.331006] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:392:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kin expansion of macro \xe2\x80\x98\x1b[01m\x1b[KMV_CHECK\x1b[m\x1b[K\xe2\x80\x99\n'}
+[2.331122] (hikvision_ros2_driver) StderrLine: {'line': b'  392 |     \x1b[01;36m\x1b[KMV_CHECK\x1b[m\x1b[K(logger, MV_CC_DestroyHandle, pImpl->handle);\n'}
+[2.331238] (hikvision_ros2_driver) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~~~~\x1b[m\x1b[K\n'}
+[2.331362] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:393:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KpImpl\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[2.331484] (hikvision_ros2_driver) StderrLine: {'line': b'  393 |     \x1b[01;31m\x1b[KpImpl\x1b[m\x1b[K->handle = nullptr;\n'}
+[2.331598] (hikvision_ros2_driver) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[2.331716] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:394:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.331830] (hikvision_ros2_driver) StderrLine: {'line': b'  394 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K\n'}
+[2.331944] (hikvision_ros2_driver) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.332058] (hikvision_ros2_driver) StderrLine: {'line': b'\x1b[01m\x1b[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:396:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected declaration before \xe2\x80\x98\x1b[01m\x1b[K}\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[2.332172] (hikvision_ros2_driver) StderrLine: {'line': b'  396 | \x1b[01;31m\x1b[K}\x1b[m\x1b[K  // namespace hikvision_ros2_driver\n'}
+[2.332293] (hikvision_ros2_driver) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[2.410447] (-) TimerEvent: {}
+[2.510860] (-) TimerEvent: {}
+[2.611371] (-) TimerEvent: {}
+[2.711867] (-) TimerEvent: {}
+[2.812336] (-) TimerEvent: {}
+[2.912723] (-) TimerEvent: {}
+[3.013236] (-) TimerEvent: {}
+[3.113819] (-) TimerEvent: {}
+[3.214419] (-) TimerEvent: {}
+[3.315093] (-) TimerEvent: {}
+[3.415630] (-) TimerEvent: {}
+[3.516204] (-) TimerEvent: {}
+[3.616733] (-) TimerEvent: {}
+[3.717342] (-) TimerEvent: {}
+[3.817881] (-) TimerEvent: {}
+[3.918412] (-) TimerEvent: {}
+[3.977593] (hikvision_ros2_driver) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/hikvision_ros2_driver.dir/build.make:76: CMakeFiles/hikvision_ros2_driver.dir/src/hikvision_ros2_driver.cpp.o] Error 1\n'}
+[3.978098] (hikvision_ros2_driver) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/hikvision_ros2_driver.dir/all] Error 2\n'}
+[3.978628] (hikvision_ros2_driver) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[3.983551] (hikvision_ros2_driver) CommandEnded: {'returncode': 2}
+[3.999016] (hikvision_ros2_driver) JobEnded: {'identifier': 'hikvision_ros2_driver', 'rc': 2}
+[4.010226] (-) EventReactorShutdown: {}

@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface/rosidl_generator_py/hikvision_interface/hikvision_interface_s__rosidl_typesupport_fastrtps_c.so" "TARGETS" "hikvision_interface_s__rosidl_typesupport_fastrtps_c" "DESTINATION" "lib/python3.12/site-packages/hikvision_interface")

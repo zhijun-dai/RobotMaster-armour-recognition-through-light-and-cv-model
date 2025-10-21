@@ -1,0 +1,4 @@
+source;share/hikvision_interface/local_setup.bash
+source;share/hikvision_interface/local_setup.dsv
+source;share/hikvision_interface/local_setup.sh
+source;share/hikvision_interface/local_setup.zsh

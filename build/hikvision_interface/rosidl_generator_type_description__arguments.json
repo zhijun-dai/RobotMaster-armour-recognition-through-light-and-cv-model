@@ -1,0 +1,11 @@
+{
+  "package_name": "hikvision_interface",
+  "output_dir": "/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface/rosidl_generator_type_description/hikvision_interface",
+  "idl_tuples": [
+    "/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface/rosidl_adapter/hikvision_interface:msg/HikImageInfo.idl"
+  ],
+  "include_paths": [
+    "std_msgs:/opt/ros/jazzy/share/std_msgs",
+    "builtin_interfaces:/opt/ros/jazzy/share/builtin_interfaces"
+  ]
+}

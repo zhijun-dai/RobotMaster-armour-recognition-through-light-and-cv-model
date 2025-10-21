@@ -1,0 +1,1 @@
+/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface/rosidl_generator_c/hikvision_interface/msg/hik_image_info.h

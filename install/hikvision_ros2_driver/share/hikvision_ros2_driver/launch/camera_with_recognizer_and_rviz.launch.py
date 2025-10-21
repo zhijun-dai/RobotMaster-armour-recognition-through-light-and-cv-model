@@ -1,0 +1,1 @@
+/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/launch/camera_with_recognizer_and_rviz.launch.py

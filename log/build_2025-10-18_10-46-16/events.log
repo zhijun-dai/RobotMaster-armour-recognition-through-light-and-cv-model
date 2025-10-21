@@ -1,0 +1,320 @@
+[0.000000] (-) TimerEvent: {}
+[0.000708] (-) JobUnselected: {'identifier': 'hikvision_interface'}
+[0.001087] (hikvision_ros2_driver) JobQueued: {'identifier': 'hikvision_ros2_driver', 'dependencies': OrderedDict({'hikvision_interface': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface'})}
+[0.001550] (hikvision_ros2_driver) JobStarted: {'identifier': 'hikvision_ros2_driver'}
+[0.018696] (hikvision_ros2_driver) JobProgress: {'identifier': 'hikvision_ros2_driver', 'progress': 'cmake'}
+[0.019992] (hikvision_ros2_driver) JobProgress: {'identifier': 'hikvision_ros2_driver', 'progress': 'build'}
+[0.021225] (hikvision_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver', '--', '-j16', '-l16'], 'cwd': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'USER': 'daizhijun', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'LD_LIBRARY_PATH': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib:/opt/ros/jazzy/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/daizhijun', 'OLDPWD': '/home/daizhijun/RobotMaster/hikvision_ros2_integration', 'CHROME_DESKTOP': 'code.desktop', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'TERM_PROGRAM_VERSION': '1.104.3', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ZSH': '/home/daizhijun/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'MANAGERPID': '2832', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'SYSTEMD_EXEC_PID': '3078', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/daizhijun/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy', 'P9K_TTY': 'old', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3850', 'COLORTERM': 'truecolor', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install', 'LOGNAME': 'daizhijun', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '9:28923', '_P9K_SSH_TTY': '/dev/pts/8', 'XDG_SESSION_CLASS': 'user', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'PKG_CONFIG_PATH': '/opt/ros/jazzy/lib/pkgconfig:/opt/ros/jazzy/lib/pkgconfig:', 'ROS_VERSION': '2', 'USER_ZDOTDIR': '/home/daizhijun', 'USERNAME': 'daizhijun', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/daizhijun/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/daizhijun/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/daizhijun-XiaoXinPro-16-IAH10:@/tmp/.ICE-unix/3030,unix/daizhijun-XiaoXinPro-16-IAH10:/tmp/.ICE-unix/3030', 'INVOCATION_ID': '11971d85a40941a7a1e5861d73e9ba28', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/daizhijun/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-2d5724332190b34e.txt', 'PYTHONSTARTUP': '/home/daizhijun/.config/Code/User/workspaceStorage/7a5d3e3c82048ce02fdbb3ad930216f9/ms-python.python/pythonrc.py', 'VSCODE_INJECTION': '1', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.8ZOHE3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-17af5d7fd3.sock', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'AMENT_PREFIX_PATH': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GJS_DEBUG_OUTPUT': 'stderr', 'P9K_SSH': '0', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_NONCE': 'fecfc078-7844-43a8-951f-97c4c47f0972', 'PWD': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'ZDOTDIR': '/home/daizhijun', '_P9K_TTY': '/dev/pts/8', 'PYTHONPATH': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver:/opt/ros/jazzy:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.099335] (-) TimerEvent: {}
+[0.135057] (hikvision_ros2_driver) StdoutLine: {'line': b'[ 50%] Built target hikvision_ros2_driver_node\n'}
+[0.161626] (hikvision_ros2_driver) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/hikvision_ros2_driver.dir/src/hikvision_ros2_driver.cpp.o\x1b[0m\n'}
+[0.199539] (-) TimerEvent: {}
+[0.300141] (-) TimerEvent: {}
+[0.400695] (-) TimerEvent: {}
+[0.501196] (-) TimerEvent: {}
+[0.601696] (-) TimerEvent: {}
+[0.702173] (-) TimerEvent: {}
+[0.802692] (-) TimerEvent: {}
+[0.903287] (-) TimerEvent: {}
+[1.003980] (-) TimerEvent: {}
+[1.104496] (-) TimerEvent: {}
+[1.204871] (-) TimerEvent: {}
+[1.305441] (-) TimerEvent: {}
+[1.406033] (-) TimerEvent: {}
+[1.506673] (-) TimerEvent: {}
+[1.607287] (-) TimerEvent: {}
+[1.707934] (-) TimerEvent: {}
+[1.808473] (-) TimerEvent: {}
+[1.909035] (-) TimerEvent: {}
+[2.009631] (-) TimerEvent: {}
+[2.110175] (-) TimerEvent: {}
+[2.210707] (-) TimerEvent: {}
+[2.311314] (-) TimerEvent: {}
+[2.411913] (-) TimerEvent: {}
+[2.512444] (-) TimerEvent: {}
+[2.613009] (-) TimerEvent: {}
+[2.713664] (-) TimerEvent: {}
+[2.814270] (-) TimerEvent: {}
+[2.914885] (-) TimerEvent: {}
+[3.015439] (-) TimerEvent: {}
+[3.116050] (-) TimerEvent: {}
+[3.216704] (-) TimerEvent: {}
+[3.317325] (-) TimerEvent: {}
+[3.417823] (-) TimerEvent: {}
+[3.518381] (-) TimerEvent: {}
+[3.618855] (-) TimerEvent: {}
+[3.719389] (-) TimerEvent: {}
+[3.819899] (-) TimerEvent: {}
+[3.920546] (-) TimerEvent: {}
+[4.021109] (-) TimerEvent: {}
+[4.121731] (-) TimerEvent: {}
+[4.222266] (-) TimerEvent: {}
+[4.322903] (-) TimerEvent: {}
+[4.423506] (-) TimerEvent: {}
+[4.524061] (-) TimerEvent: {}
+[4.624703] (-) TimerEvent: {}
+[4.725337] (-) TimerEvent: {}
+[4.826017] (-) TimerEvent: {}
+[4.926654] (-) TimerEvent: {}
+[5.027182] (-) TimerEvent: {}
+[5.127790] (-) TimerEvent: {}
+[5.228405] (-) TimerEvent: {}
+[5.329048] (-) TimerEvent: {}
+[5.429633] (-) TimerEvent: {}
+[5.530220] (-) TimerEvent: {}
+[5.630760] (-) TimerEvent: {}
+[5.731361] (-) TimerEvent: {}
+[5.831917] (-) TimerEvent: {}
+[5.932497] (-) TimerEvent: {}
+[6.033130] (-) TimerEvent: {}
+[6.133782] (-) TimerEvent: {}
+[6.234375] (-) TimerEvent: {}
+[6.334878] (-) TimerEvent: {}
+[6.435347] (-) TimerEvent: {}
+[6.535882] (-) TimerEvent: {}
+[6.636417] (-) TimerEvent: {}
+[6.737046] (-) TimerEvent: {}
+[6.837695] (-) TimerEvent: {}
+[6.938250] (-) TimerEvent: {}
+[7.038925] (-) TimerEvent: {}
+[7.139461] (-) TimerEvent: {}
+[7.240089] (-) TimerEvent: {}
+[7.340739] (-) TimerEvent: {}
+[7.441348] (-) TimerEvent: {}
+[7.541992] (-) TimerEvent: {}
+[7.642652] (-) TimerEvent: {}
+[7.743266] (-) TimerEvent: {}
+[7.843917] (-) TimerEvent: {}
+[7.944568] (-) TimerEvent: {}
+[8.045258] (-) TimerEvent: {}
+[8.145913] (-) TimerEvent: {}
+[8.246526] (-) TimerEvent: {}
+[8.347186] (-) TimerEvent: {}
+[8.447841] (-) TimerEvent: {}
+[8.548424] (-) TimerEvent: {}
+[8.648961] (-) TimerEvent: {}
+[8.749450] (-) TimerEvent: {}
+[8.849925] (-) TimerEvent: {}
+[8.950310] (-) TimerEvent: {}
+[9.050705] (-) TimerEvent: {}
+[9.151103] (-) TimerEvent: {}
+[9.251628] (-) TimerEvent: {}
+[9.352032] (-) TimerEvent: {}
+[9.452499] (-) TimerEvent: {}
+[9.553026] (-) TimerEvent: {}
+[9.653594] (-) TimerEvent: {}
+[9.754103] (-) TimerEvent: {}
+[9.854645] (-) TimerEvent: {}
+[9.955139] (-) TimerEvent: {}
+[10.055694] (-) TimerEvent: {}
+[10.156261] (-) TimerEvent: {}
+[10.256813] (-) TimerEvent: {}
+[10.357375] (-) TimerEvent: {}
+[10.457883] (-) TimerEvent: {}
+[10.558464] (-) TimerEvent: {}
+[10.658962] (-) TimerEvent: {}
+[10.759532] (-) TimerEvent: {}
+[10.860126] (-) TimerEvent: {}
+[10.960629] (-) TimerEvent: {}
+[11.061120] (-) TimerEvent: {}
+[11.161708] (-) TimerEvent: {}
+[11.262208] (-) TimerEvent: {}
+[11.362819] (-) TimerEvent: {}
+[11.463390] (-) TimerEvent: {}
+[11.563935] (-) TimerEvent: {}
+[11.664399] (-) TimerEvent: {}
+[11.764960] (-) TimerEvent: {}
+[11.865454] (-) TimerEvent: {}
+[11.965985] (-) TimerEvent: {}
+[12.066378] (-) TimerEvent: {}
+[12.166807] (-) TimerEvent: {}
+[12.267232] (-) TimerEvent: {}
+[12.367710] (-) TimerEvent: {}
+[12.468096] (-) TimerEvent: {}
+[12.568470] (-) TimerEvent: {}
+[12.668873] (-) TimerEvent: {}
+[12.769387] (-) TimerEvent: {}
+[12.869813] (-) TimerEvent: {}
+[12.970383] (-) TimerEvent: {}
+[13.070877] (-) TimerEvent: {}
+[13.171359] (-) TimerEvent: {}
+[13.271867] (-) TimerEvent: {}
+[13.372437] (-) TimerEvent: {}
+[13.472932] (-) TimerEvent: {}
+[13.573409] (-) TimerEvent: {}
+[13.673897] (-) TimerEvent: {}
+[13.774375] (-) TimerEvent: {}
+[13.874869] (-) TimerEvent: {}
+[13.975327] (-) TimerEvent: {}
+[14.075814] (-) TimerEvent: {}
+[14.176290] (-) TimerEvent: {}
+[14.276874] (-) TimerEvent: {}
+[14.377400] (-) TimerEvent: {}
+[14.477888] (-) TimerEvent: {}
+[14.578435] (-) TimerEvent: {}
+[14.679048] (-) TimerEvent: {}
+[14.779595] (-) TimerEvent: {}
+[14.880089] (-) TimerEvent: {}
+[14.980587] (-) TimerEvent: {}
+[15.081160] (-) TimerEvent: {}
+[15.181647] (-) TimerEvent: {}
+[15.282114] (-) TimerEvent: {}
+[15.382700] (-) TimerEvent: {}
+[15.483171] (-) TimerEvent: {}
+[15.586111] (-) TimerEvent: {}
+[15.686592] (-) TimerEvent: {}
+[15.787103] (-) TimerEvent: {}
+[15.887622] (-) TimerEvent: {}
+[15.988095] (-) TimerEvent: {}
+[16.088554] (-) TimerEvent: {}
+[16.189054] (-) TimerEvent: {}
+[16.289635] (-) TimerEvent: {}
+[16.390118] (-) TimerEvent: {}
+[16.490676] (-) TimerEvent: {}
+[16.591222] (-) TimerEvent: {}
+[16.691799] (-) TimerEvent: {}
+[16.792266] (-) TimerEvent: {}
+[16.892807] (-) TimerEvent: {}
+[16.993370] (-) TimerEvent: {}
+[17.093931] (-) TimerEvent: {}
+[17.194432] (-) TimerEvent: {}
+[17.294956] (-) TimerEvent: {}
+[17.395564] (-) TimerEvent: {}
+[17.496063] (-) TimerEvent: {}
+[17.596677] (-) TimerEvent: {}
+[17.697175] (-) TimerEvent: {}
+[17.797780] (-) TimerEvent: {}
+[17.898369] (-) TimerEvent: {}
+[17.998866] (-) TimerEvent: {}
+[18.099354] (-) TimerEvent: {}
+[18.199849] (-) TimerEvent: {}
+[18.300388] (-) TimerEvent: {}
+[18.400826] (-) TimerEvent: {}
+[18.501253] (-) TimerEvent: {}
+[18.601741] (-) TimerEvent: {}
+[18.702144] (-) TimerEvent: {}
+[18.802538] (-) TimerEvent: {}
+[18.903057] (-) TimerEvent: {}
+[19.003649] (-) TimerEvent: {}
+[19.104128] (-) TimerEvent: {}
+[19.204707] (-) TimerEvent: {}
+[19.305271] (-) TimerEvent: {}
+[19.405731] (-) TimerEvent: {}
+[19.506376] (-) TimerEvent: {}
+[19.607013] (-) TimerEvent: {}
+[19.707564] (-) TimerEvent: {}
+[19.808156] (-) TimerEvent: {}
+[19.908692] (-) TimerEvent: {}
+[20.009165] (-) TimerEvent: {}
+[20.109728] (-) TimerEvent: {}
+[20.210216] (-) TimerEvent: {}
+[20.310755] (-) TimerEvent: {}
+[20.411344] (-) TimerEvent: {}
+[20.511822] (-) TimerEvent: {}
+[20.612294] (-) TimerEvent: {}
+[20.712867] (-) TimerEvent: {}
+[20.813431] (-) TimerEvent: {}
+[20.914040] (-) TimerEvent: {}
+[21.014554] (-) TimerEvent: {}
+[21.115124] (-) TimerEvent: {}
+[21.215663] (-) TimerEvent: {}
+[21.316112] (-) TimerEvent: {}
+[21.416575] (-) TimerEvent: {}
+[21.517010] (-) TimerEvent: {}
+[21.617459] (-) TimerEvent: {}
+[21.717920] (-) TimerEvent: {}
+[21.818410] (-) TimerEvent: {}
+[21.918831] (-) TimerEvent: {}
+[22.019393] (-) TimerEvent: {}
+[22.119909] (-) TimerEvent: {}
+[22.220368] (-) TimerEvent: {}
+[22.320849] (-) TimerEvent: {}
+[22.421329] (-) TimerEvent: {}
+[22.521821] (-) TimerEvent: {}
+[22.622393] (-) TimerEvent: {}
+[22.722881] (-) TimerEvent: {}
+[22.823483] (-) TimerEvent: {}
+[22.923985] (-) TimerEvent: {}
+[23.024628] (-) TimerEvent: {}
+[23.125182] (-) TimerEvent: {}
+[23.225735] (-) TimerEvent: {}
+[23.326230] (-) TimerEvent: {}
+[23.426788] (-) TimerEvent: {}
+[23.527347] (-) TimerEvent: {}
+[23.627950] (-) TimerEvent: {}
+[23.728696] (-) TimerEvent: {}
+[23.829375] (-) TimerEvent: {}
+[23.929998] (-) TimerEvent: {}
+[24.030651] (-) TimerEvent: {}
+[24.131184] (-) TimerEvent: {}
+[24.231809] (-) TimerEvent: {}
+[24.332423] (-) TimerEvent: {}
+[24.432983] (-) TimerEvent: {}
+[24.533467] (-) TimerEvent: {}
+[24.633962] (-) TimerEvent: {}
+[24.734540] (-) TimerEvent: {}
+[24.835032] (-) TimerEvent: {}
+[24.935624] (-) TimerEvent: {}
+[25.036270] (-) TimerEvent: {}
+[25.136880] (-) TimerEvent: {}
+[25.237506] (-) TimerEvent: {}
+[25.338076] (-) TimerEvent: {}
+[25.438717] (-) TimerEvent: {}
+[25.539265] (-) TimerEvent: {}
+[25.639931] (-) TimerEvent: {}
+[25.740549] (-) TimerEvent: {}
+[25.841171] (-) TimerEvent: {}
+[25.941765] (-) TimerEvent: {}
+[26.042389] (-) TimerEvent: {}
+[26.142993] (-) TimerEvent: {}
+[26.243616] (-) TimerEvent: {}
+[26.344154] (-) TimerEvent: {}
+[26.415014] (hikvision_ros2_driver) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library libhikvision_ros2_driver.so\x1b[0m\n'}
+[26.444407] (-) TimerEvent: {}
+[26.545018] (-) TimerEvent: {}
+[26.645708] (-) TimerEvent: {}
+[26.746277] (-) TimerEvent: {}
+[26.846954] (-) TimerEvent: {}
+[26.893643] (hikvision_ros2_driver) StdoutLine: {'line': b'[100%] Built target hikvision_ros2_driver\n'}
+[26.918057] (hikvision_ros2_driver) CommandEnded: {'returncode': 0}
+[26.919503] (hikvision_ros2_driver) JobProgress: {'identifier': 'hikvision_ros2_driver', 'progress': 'install'}
+[26.936901] (hikvision_ros2_driver) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver'], 'cwd': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver', 'env': OrderedDict({'GJS_DEBUG_TOPICS': 'JS ERROR;JS LOG', 'PYTHON_BASIC_REPL': '1', 'USER': 'daizhijun', 'XDG_SESSION_TYPE': 'wayland', 'GIT_ASKPASS': '/usr/share/code/resources/app/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'CLUTTER_DISABLE_MIPMAPPED_TEXT': '1', 'LD_LIBRARY_PATH': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib:/opt/ros/jazzy/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/daizhijun', 'OLDPWD': '/home/daizhijun/RobotMaster/hikvision_ros2_integration', 'CHROME_DESKTOP': 'code.desktop', 'LESS': '-R', 'DESKTOP_SESSION': 'ubuntu', 'TERM_PROGRAM_VERSION': '1.104.3', 'GIO_LAUNCHED_DESKTOP_FILE': '/usr/share/applications/code.desktop', 'ZSH': '/home/daizhijun/.oh-my-zsh', 'LSCOLORS': 'Gxfxcxdxbxegedabagacad', 'GTK_MODULES': 'gail:atk-bridge', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'PAGER': 'less', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js', 'MANAGERPID': '2832', 'VSCODE_GIT_ASKPASS_NODE': '/usr/share/code/code', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'SYSTEMD_EXEC_PID': '3078', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/daizhijun/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/libs/debugpy', 'P9K_TTY': 'old', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '3850', 'COLORTERM': 'truecolor', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'COLCON_PREFIX_PATH': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install', 'LOGNAME': 'daizhijun', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '9:28923', '_P9K_SSH_TTY': '/dev/pts/8', 'XDG_SESSION_CLASS': 'user', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.Shell@wayland.service/memory.pressure', 'PKG_CONFIG_PATH': '/opt/ros/jazzy/lib/pkgconfig:/opt/ros/jazzy/lib/pkgconfig:', 'ROS_VERSION': '2', 'USER_ZDOTDIR': '/home/daizhijun', 'USERNAME': 'daizhijun', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/daizhijun/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/bundled/scripts/noConfigScripts:/home/daizhijun/.config/Code/User/globalStorage/github.copilot-chat/debugCommand', 'SESSION_MANAGER': 'local/daizhijun-XiaoXinPro-16-IAH10:@/tmp/.ICE-unix/3030,unix/daizhijun-XiaoXinPro-16-IAH10:/tmp/.ICE-unix/3030', 'INVOCATION_ID': '11971d85a40941a7a1e5861d73e9ba28', 'XDG_RUNTIME_DIR': '/run/user/1000', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_SETUP_DISPLAY': ':1', 'GDK_BACKEND': 'x11', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'Unity', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/daizhijun/.vscode/extensions/ms-python.debugpy-2025.14.1-linux-x64/.noConfigDebugAdapterEndpoints/endpoint-2d5724332190b34e.txt', 'PYTHONSTARTUP': '/home/daizhijun/.config/Code/User/workspaceStorage/7a5d3e3c82048ce02fdbb3ad930216f9/ms-python.python/pythonrc.py', 'VSCODE_INJECTION': '1', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XMODIFIERS': '@im=ibus', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.8ZOHE3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'TERM_PROGRAM': 'vscode', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1000/vscode-git-17af5d7fd3.sock', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ORIGINAL_XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'AMENT_PREFIX_PATH': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/opt/ros/jazzy', 'SHELL': '/usr/bin/zsh', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'GJS_DEBUG_OUTPUT': 'stderr', 'P9K_SSH': '0', 'QT_IM_MODULE': 'ibus', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'GIT_PAGER': 'cat', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'VSCODE_NONCE': 'fecfc078-7844-43a8-951f-97c4c47f0972', 'PWD': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver', 'XDG_DATA_DIRS': '/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'ZDOTDIR': '/home/daizhijun', '_P9K_TTY': '/dev/pts/8', 'PYTHONPATH': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'CMAKE_PREFIX_PATH': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver:/opt/ros/jazzy:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[26.947432] (-) TimerEvent: {}
+[26.952978] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Install configuration: "RelWithDebInfo"\n'}
+[26.954231] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[26.954770] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib/hikvision_ros2_driver/hikvision_ros2_driver_node\n'}
+[26.955479] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver//launch/camera_with_recognizer_and_rviz.launch.py\n'}
+[26.955757] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver//launch/camera_with_rviz.launch.py\n'}
+[26.955894] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver//launch/component.launch.yaml\n'}
+[26.956052] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver//launch/standalone.launch.yaml\n'}
+[26.956250] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/include/hikvision_ros2_driver/hikvision_ros2_driver.hpp\n'}
+[26.956495] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/environment/library_path.sh\n'}
+[26.956791] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/environment/library_path.dsv\n'}
+[26.957123] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib/libhikvision_ros2_driver.so\n'}
+[26.957904] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/launch/camera_with_recognizer_and_rviz.launch.py\n'}
+[26.958214] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/launch/camera_with_rviz.launch.py\n'}
+[26.958358] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/launch/component.launch.yaml\n'}
+[26.958445] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/launch/standalone.launch.yaml\n'}
+[26.958552] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/ament_index/resource_index/package_run_dependencies/hikvision_ros2_driver\n'}
+[26.958968] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/ament_index/resource_index/parent_prefix_path/hikvision_ros2_driver\n'}
+[26.959199] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/environment/ament_prefix_path.sh\n'}
+[26.959308] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/environment/ament_prefix_path.dsv\n'}
+[26.959512] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/environment/path.sh\n'}
+[26.959766] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/environment/path.dsv\n'}
+[26.959977] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/local_setup.bash\n'}
+[26.960241] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/local_setup.sh\n'}
+[26.960402] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/local_setup.zsh\n'}
+[26.960607] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/local_setup.dsv\n'}
+[26.960776] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/package.dsv\n'}
+[26.978729] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/ament_index/resource_index/packages/hikvision_ros2_driver\n'}
+[26.979138] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/ament_index/resource_index/rclcpp_components/hikvision_ros2_driver\n'}
+[26.979274] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[26.979478] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[26.979564] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[26.979806] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/cmake/hikvision_ros2_driverConfig.cmake\n'}
+[26.979882] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/cmake/hikvision_ros2_driverConfig-version.cmake\n'}
+[26.980000] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/package.xml\n'}
+[26.980223] (hikvision_ros2_driver) StdoutLine: {'line': b'-- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib/hikvision_ros2_driver/armor_recognizer_node.py\n'}
+[26.984003] (hikvision_ros2_driver) CommandEnded: {'returncode': 0}
+[27.016342] (hikvision_ros2_driver) JobEnded: {'identifier': 'hikvision_ros2_driver', 'rc': 0}
+[27.017538] (-) EventReactorShutdown: {}

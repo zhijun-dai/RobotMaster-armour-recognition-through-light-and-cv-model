@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver/hikvision_ros2_driver_node" "TARGETS" "hikvision_ros2_driver_node" "DESTINATION" "lib/hikvision_ros2_driver")

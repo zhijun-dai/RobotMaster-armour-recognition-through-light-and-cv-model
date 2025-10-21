@@ -1,0 +1,8 @@
+[0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/hikvision_ros2_driver` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.h: No such file or directory
+    8 | #include [01;31m[K<cv_bridge/cv_bridge.h>[m[K // 添加 cv_bridge
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/hikvision_ros2_driver.dir/build.make:76: CMakeFiles/hikvision_ros2_driver.dir/src/hikvision_ros2_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/hikvision_ros2_driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

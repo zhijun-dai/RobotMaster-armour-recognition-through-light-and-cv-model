@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-57f61d13d745673fa82c.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "hikvision_interface__py",
+					"jsonFile" : "directory-hikvision_interface__py-RelWithDebInfo-f24ee221bd5da51ecb97.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface/hikvision_interface__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "hikvision_interface",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_hikvision_interface_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_hikvision_interface_egg-RelWithDebInfo-6172b2132fee804d73ac.json",
+					"name" : "ament_cmake_python_build_hikvision_interface_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_hikvision_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_hikvision_interface-RelWithDebInfo-7649a82f7f44b3c0ae69.json",
+					"name" : "ament_cmake_python_symlink_hikvision_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_interface::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_interface-RelWithDebInfo-a9a2dd930b46b22591aa.json",
+					"name" : "hikvision_interface",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_interface__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_interface__cpp-RelWithDebInfo-7f3d849ec5d2640536b5.json",
+					"name" : "hikvision_interface__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "hikvision_interface__py::@ddf6c808ed7a39d1a044",
+					"jsonFile" : "target-hikvision_interface__py-RelWithDebInfo-9bf7de764d6ed8390d72.json",
+					"name" : "hikvision_interface__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_interface__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_interface__rosidl_generator_c-RelWithDebInfo-b5f78f58bbbb3fd18962.json",
+					"name" : "hikvision_interface__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_interface__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_interface__rosidl_generator_py-RelWithDebInfo-75711c574e46b751faa9.json",
+					"name" : "hikvision_interface__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_interface__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_interface__rosidl_generator_type_description-RelWithDebInfo-24b82b33ef7e28ad34b7.json",
+					"name" : "hikvision_interface__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_interface__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_interface__rosidl_typesupport_c-RelWithDebInfo-c5f9a1c5f96e00d4e5e7.json",
+					"name" : "hikvision_interface__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_interface__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_interface__rosidl_typesupport_cpp-RelWithDebInfo-65c069a741c79d84b50d.json",
+					"name" : "hikvision_interface__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_interface__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_interface__rosidl_typesupport_fastrtps_c-RelWithDebInfo-be8e51deb3c9b0ce0d8f.json",
+					"name" : "hikvision_interface__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_interface__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_interface__rosidl_typesupport_fastrtps_cpp-RelWithDebInfo-ff22044374b0055406b3.json",
+					"name" : "hikvision_interface__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_interface__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_interface__rosidl_typesupport_introspection_c-RelWithDebInfo-521ca1f9aedbaf23b51a.json",
+					"name" : "hikvision_interface__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_interface__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_interface__rosidl_typesupport_introspection_cpp-RelWithDebInfo-893b49c4cee8f080fe87.json",
+					"name" : "hikvision_interface__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_interface_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_interface_s__rosidl_typesupport_c-RelWithDebInfo-ebbd8d3ecf2fa9c68f8a.json",
+					"name" : "hikvision_interface_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_interface_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_interface_s__rosidl_typesupport_fastrtps_c-RelWithDebInfo-c0bd433c887ce4b2f6c7.json",
+					"name" : "hikvision_interface_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_interface_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_interface_s__rosidl_typesupport_introspection_c-RelWithDebInfo-70166be272c96e65df88.json",
+					"name" : "hikvision_interface_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_interface_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_interface_uninstall-RelWithDebInfo-807306f62fd52e692d13.json",
+					"name" : "hikvision_interface_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-8e7855e97a201d6ccba8.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface",
+		"source" : "/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_interface"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

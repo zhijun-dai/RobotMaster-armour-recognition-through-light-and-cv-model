@@ -1,0 +1,35 @@
+[0.017s] Invoking command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver': AMENT_PREFIX_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/opt/ros/jazzy:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/jazzy/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver -- -j16 -l16
+[0.068s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[0.334s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.470s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.476s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.482s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.491s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.545s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.545s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.614s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.747s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.749s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/hikvision_ros2_driver` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[0.752s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.752s] -- Configured cppcheck include dirs: /home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/include
+[0.752s] -- Configured cppcheck exclude dirs and/or files: 
+[0.752s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.753s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.753s] -- Added test 'lint_cmake' to check CMake code style
+[0.753s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.753s] -- Added test 'uncrustify' to check C / C++ code style
+[0.753s] -- Configured uncrustify additional arguments: 
+[0.753s] -- Added test 'xmllint' to check XML markup files
+[0.754s] -- Configuring done (0.7s)
+[0.765s] -- Generating done (0.0s)
+[0.768s] -- Build files have been written to: /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver
+[0.837s] [ 25%] [32mBuilding CXX object CMakeFiles/hikvision_ros2_driver.dir/src/hikvision_ros2_driver.cpp.o[0m
+[0.847s] [ 75%] Built target hikvision_ros2_driver_node
+[0.990s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Kcv_bridge/cv_bridge.h: No such file or directory
+[0.991s]     8 | #include [01;31m[K<cv_bridge/cv_bridge.h>[m[K // 添加 cv_bridge
+[0.991s]       |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[0.991s] compilation terminated.
+[0.994s] gmake[2]: *** [CMakeFiles/hikvision_ros2_driver.dir/build.make:76: CMakeFiles/hikvision_ros2_driver.dir/src/hikvision_ros2_driver.cpp.o] Error 1
+[0.994s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/hikvision_ros2_driver.dir/all] Error 2
+[0.995s] gmake: *** [Makefile:146: all] Error 2
+[1.000s] Invoked command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver' returned '2': AMENT_PREFIX_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/opt/ros/jazzy:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/jazzy/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver -- -j16 -l16

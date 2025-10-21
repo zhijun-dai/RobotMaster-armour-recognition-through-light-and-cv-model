@@ -1,0 +1,22 @@
+[ 50%] Built target hikvision_ros2_driver_node
+[ 75%] [32mBuilding CXX object CMakeFiles/hikvision_ros2_driver.dir/src/hikvision_ros2_driver.cpp.o[0m
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K In member function ‘[01m[Kvoid hikvision_ros2_driver::HikvisionDriver::[01;32m[Kimage_callback[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:113:32:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontours[m[K’ was not declared in this scope; did you mean ‘[01m[Kcontour[m[K’?
+  113 |     for (const auto& contour : [01;31m[Kcontours[m[K) {
+      |                                [01;31m[K^~~~~~~~[m[K
+      |                                [32m[Kcontour[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:137:13:[m[K [01;31m[Kerror: [m[K‘[01m[Karmor_found[m[K’ was not declared in this scope
+  137 |         if ([01;31m[Karmor_found[m[K) {
+      |             [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:138:37:[m[K [01;31m[Kerror: [m[K‘[01m[KarmorBox[m[K’ was not declared in this scope
+  138 |             cv::rectangle(gray_vis, [01;31m[KarmorBox[m[K, cv::Scalar(0, 255, 0), 2);
+      |                                     [01;31m[K^~~~~~~~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:172:34:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::vector<cv::RotatedRect> valid_rects[m[K’
+  172 |     std::vector<cv::RotatedRect> [01;31m[Kvalid_rects[m[K;
+      |                                  [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:112:34:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::vector<cv::RotatedRect> valid_rects[m[K’ previously declared here
+  112 |     std::vector<cv::RotatedRect> [01;36m[Kvalid_rects[m[K;
+      |                                  [01;36m[K^~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/hikvision_ros2_driver.dir/build.make:76: CMakeFiles/hikvision_ros2_driver.dir/src/hikvision_ros2_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/hikvision_ros2_driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

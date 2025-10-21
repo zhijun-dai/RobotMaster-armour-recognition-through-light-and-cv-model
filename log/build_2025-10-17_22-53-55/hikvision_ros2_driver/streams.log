@@ -1,0 +1,704 @@
+[0.012s] Invoking command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver': AMENT_PREFIX_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/opt/ros/jazzy:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/jazzy/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver -- -j16 -l16
+[0.063s] -- Found ament_cmake_auto: 2.5.4 (/opt/ros/jazzy/share/ament_cmake_auto/cmake)
+[0.336s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.477s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.482s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.489s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.498s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.546s] -- Found rmw_implementation_cmake: 7.3.2 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.546s] -- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.587s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.694s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[0.696s] [0mIn this package, headers install destination is set to `include` by ament_auto_package. It is recommended to install `include/hikvision_ros2_driver` instead and will be the default behavior of ament_auto_package from ROS 2 Kilted Kaiju. On distributions before Kilted, ament_auto_package behaves the same way when you use USE_SCOPED_HEADER_INSTALL_DIR option.[0m
+[0.699s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[0.699s] -- Configured cppcheck include dirs: /home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/include
+[0.699s] -- Configured cppcheck exclude dirs and/or files: 
+[0.699s] -- Added test 'flake8' to check Python code syntax and style conventions
+[0.699s] -- Configured 'flake8' exclude dirs and/or files: 
+[0.700s] -- Added test 'lint_cmake' to check CMake code style
+[0.700s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[0.700s] -- Added test 'uncrustify' to check C / C++ code style
+[0.700s] -- Configured uncrustify additional arguments: 
+[0.700s] -- Added test 'xmllint' to check XML markup files
+[0.701s] -- Configuring done (0.6s)
+[0.712s] -- Generating done (0.0s)
+[0.714s] -- Build files have been written to: /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver
+[0.789s] [ 25%] [32mBuilding CXX object CMakeFiles/hikvision_ros2_driver.dir/src/hikvision_ros2_driver.cpp.o[0m
+[0.801s] [ 75%] Built target hikvision_ros2_driver_node
+[2.543s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:66:57:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_FRAME_OUT_INFO_EX[m[K’ has not been declared
+[2.543s]    66 | tatic void image_callback_ex(unsigned char *pData, [01;31m[KMV_FRAME_OUT_INFO_EX[m[K *pFrameInfo, void *pUser);
+[2.543s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.543s] 
+[2.548s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K In member function ‘[01m[Kvoid hikvision_ros2_driver::HikvisionDriver::[01;32m[Kimage_callback[m[K(sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr)[m[K’:
+[2.548s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:81:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMat[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::Mat[m[K’?
+[2.548s]    81 |     [01;31m[KMat[m[K img = cv_ptr->image.clone(); // 获取 OpenCV Mat 格式图像
+[2.548s]       |     [01;31m[K^~~[m[K
+[2.549s]       |     [32m[Kcv::Mat[m[K
+[2.549s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:58[m[K,
+[2.549s]                  from [01m[K/usr/include/opencv4/opencv2/core/core.hpp:48[m[K,
+[2.549s]                  from [01m[K/opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp:43[m[K,
+[2.549s]                  from [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:8[m[K:
+[2.549s] [01m[K/usr/include/opencv4/opencv2/core/mat.hpp:810:18:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::Mat[m[K’ declared here
+[2.549s]   810 | class CV_EXPORTS [01;36m[KMat[m[K
+[2.549s]       |                  [01;36m[K^~~[m[K
+[2.549s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:82:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kresult[m[K’
+[2.549s]    82 |     Mat[01;31m[K [m[K[32m[Kresult[m[K = img.clone(); // 每帧都创建一个新的结果图
+[2.549s]       |        [01;31m[K^[m[K[32m[K~~~~~~[m[K
+[2.549s]       |        [32m[K;[m[K
+[2.549s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:85:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kkernel3[m[K’
+[2.549s]    85 |     Mat[01;31m[K [m[K[32m[Kkernel3[m[K = getStructuringElement(MORPH_RECT, Size(3, 3));
+[2.550s]       |        [01;31m[K^[m[K[32m[K~~~~~~~[m[K
+[2.550s]       |        [32m[K;[m[K
+[2.550s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:86:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kkernel5[m[K’
+[2.550s]    86 |     Mat[01;31m[K [m[K[32m[Kkernel5[m[K = getStructuringElement(MORPH_RECT, Size(5, 5));
+[2.550s]       |        [01;31m[K^[m[K[32m[K~~~~~~~[m[K
+[2.550s]       |        [32m[K;[m[K
+[2.550s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:87:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kkernel7[m[K’
+[2.550s]    87 |     Mat[01;31m[K [m[K[32m[Kkernel7[m[K = getStructuringElement(MORPH_RECT, Size(7, 7));
+[2.550s]       |        [01;31m[K^[m[K[32m[K~~~~~~~[m[K
+[2.550s]       |        [32m[K;[m[K
+[2.550s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:88:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kkernel9[m[K’
+[2.550s]    88 |     Mat[01;31m[K [m[K[32m[Kkernel9[m[K = getStructuringElement(MORPH_RECT, Size(9, 9));
+[2.550s]       |        [01;31m[K^[m[K[32m[K~~~~~~~[m[K
+[2.550s]       |        [32m[K;[m[K
+[2.551s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:91:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kgray[m[K’
+[2.551s]    91 |     Mat[01;31m[K [m[K[32m[Kgray[m[K;
+[2.551s]       |        [01;31m[K^[m[K[32m[K~~~~[m[K
+[2.551s]       |        [32m[K;[m[K
+[2.553s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:92:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kimg[m[K’ was not declared in this scope
+[2.553s]    92 |     cvtColor([01;31m[Kimg[m[K, gray, COLOR_BGR2GRAY);
+[2.553s]       |              [01;31m[K^~~[m[K
+[2.557s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:92:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kgray[m[K’ was not declared in this scope
+[2.557s]    92 |     cvtColor(img, [01;31m[Kgray[m[K, COLOR_BGR2GRAY);
+[2.558s]       |                   [01;31m[K^~~~[m[K
+[2.558s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:92:25:[m[K [01;31m[Kerror: [m[K‘[01m[KCOLOR_BGR2GRAY[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::COLOR_BGR2GRAY[m[K’?
+[2.558s]    92 |     cvtColor(img, gray, [01;31m[KCOLOR_BGR2GRAY[m[K);
+[2.558s]       |                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.558s]       |                         [32m[Kcv::COLOR_BGR2GRAY[m[K
+[2.558s] In file included from [01m[K/usr/include/opencv4/opencv2/imgproc/imgproc.hpp:48[m[K,
+[2.558s]                  from [01m[K/opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp:44[m[K:
+[2.558s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:551:5:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::COLOR_BGR2GRAY[m[K’ declared here
+[2.559s]   551 |     [01;36m[KCOLOR_BGR2GRAY[m[K     = 6, //!< convert between RGB/BGR and grayscale, @ref color_convert_rgb_gray "color conversions"
+[2.559s]       |     [01;36m[K^~~~~~~~~~~~~~[m[K
+[2.559s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:92:5:[m[K [01;31m[Kerror: [m[K‘[01m[KcvtColor[m[K’ was not declared in this scope
+[2.559s]    92 |     [01;31m[KcvtColor[m[K(img, gray, COLOR_BGR2GRAY);
+[2.559s]       |     [01;31m[K^~~~~~~~[m[K
+[2.559s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:92:5:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[2.559s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:3665:19:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::cvtColor[m[K’
+[2.559s]  3665 | CV_EXPORTS_W void [01;36m[KcvtColor[m[K( InputArray src, OutputArray dst, int code, int dstCn = 0 );
+[2.559s]       |                   [01;36m[K^~~~~~~~[m[K
+[2.560s] [01m[K/opt/ros/jazzy/include/cv_bridge/cv_bridge/cv_bridge.hpp:268:29:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv_bridge::cvtColor[m[K’
+[2.560s]   268 | CV_BRIDGE_EXPORT CvImagePtr [01;36m[KcvtColor[m[K(
+[2.560s]       |                             [01;36m[K^~~~~~~~[m[K
+[2.560s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:93:30:[m[K [01;31m[Kerror: [m[K‘[01m[KSize[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::Size[m[K’?
+[2.560s]    93 |     GaussianBlur(gray, gray, [01;31m[KSize[m[K(5, 5), 0);
+[2.560s]       |                              [01;31m[K^~~~[m[K
+[2.560s]       |                              [32m[Kcv::Size[m[K
+[2.560s] In file included from [01m[K/usr/include/opencv4/opencv2/core.hpp:57[m[K:
+[2.560s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:365:16:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::Size[m[K’ declared here
+[2.560s]   365 | typedef Size2i [01;36m[KSize[m[K;
+[2.561s]       |                [01;36m[K^~~~[m[K
+[2.561s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:93:5:[m[K [01;31m[Kerror: [m[K‘[01m[KGaussianBlur[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::GaussianBlur[m[K’?
+[2.561s]    93 |     [01;31m[KGaussianBlur[m[K(gray, gray, Size(5, 5), 0);
+[2.561s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[2.561s]       |     [32m[Kcv::GaussianBlur[m[K
+[2.561s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:1509:19:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::GaussianBlur[m[K’ declared here
+[2.561s]  1509 | CV_EXPORTS_W void [01;36m[KGaussianBlur[m[K( InputArray src, OutputArray dst, Size ksize,
+[2.561s]       |                   [01;36m[K^~~~~~~~~~~~[m[K
+[2.561s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:96:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KbrightMask[m[K’
+[2.561s]    96 |     Mat[01;31m[K [m[K[32m[KbrightMask[m[K;
+[2.562s]       |        [01;31m[K^[m[K[32m[K~~~~~~~~~~[m[K
+[2.562s]       |        [32m[K;[m[K
+[2.564s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:97:21:[m[K [01;31m[Kerror: [m[K‘[01m[KbrightMask[m[K’ was not declared in this scope
+[2.564s]    97 |     threshold(gray, [01;31m[KbrightMask[m[K, 220, 255, THRESH_BINARY); // 灰度值 > 220 的为白色
+[2.564s]       |                     [01;31m[K^~~~~~~~~~[m[K
+[2.564s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:97:43:[m[K [01;31m[Kerror: [m[K‘[01m[KTHRESH_BINARY[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::THRESH_BINARY[m[K’?
+[2.565s]    97 |     threshold(gray, brightMask, 220, 255, [01;31m[KTHRESH_BINARY[m[K); // 灰度值 > 220 的为白色
+[2.565s]       |                                           [01;31m[K^~~~~~~~~~~~~[m[K
+[2.565s]       |                                           [32m[Kcv::THRESH_BINARY[m[K
+[2.565s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:321:5:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::THRESH_BINARY[m[K’ declared here
+[2.565s]   321 |     [01;36m[KTHRESH_BINARY[m[K     = 0, //!< \f[\texttt{dst} (x,y) =  \fork{\texttt{maxval}}{if \(\texttt{src}(x,y) > \texttt{thresh}\)}{0}{otherwise}\f]
+[2.565s]       |     [01;36m[K^~~~~~~~~~~~~[m[K
+[2.565s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:97:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kthreshold[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::threshold[m[K’?
+[2.565s]    97 |     [01;31m[Kthreshold[m[K(gray, brightMask, 220, 255, THRESH_BINARY); // 灰度值 > 220 的为白色
+[2.565s]       |     [01;31m[K^~~~~~~~~[m[K
+[2.566s]       |     [32m[Kcv::threshold[m[K
+[2.566s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:3022:21:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::threshold[m[K’ declared here
+[2.566s]  3022 | CV_EXPORTS_W double [01;36m[Kthreshold[m[K( InputArray src, OutputArray dst,
+[2.566s]       |                     [01;36m[K^~~~~~~~~[m[K
+[2.566s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:98:42:[m[K [01;31m[Kerror: [m[K‘[01m[KMORPH_OPEN[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::MORPH_OPEN[m[K’?
+[2.566s]    98 |     morphologyEx(brightMask, brightMask, [01;31m[KMORPH_OPEN[m[K, kernel7);
+[2.566s]       |                                          [01;31m[K^~~~~~~~~~[m[K
+[2.566s]       |                                          [32m[Kcv::MORPH_OPEN[m[K
+[2.567s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:216:5:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::MORPH_OPEN[m[K’ declared here
+[2.567s]   216 |     [01;36m[KMORPH_OPEN[m[K     = 2, //!< an opening operation
+[2.567s]       |     [01;36m[K^~~~~~~~~~[m[K
+[2.569s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:98:54:[m[K [01;31m[Kerror: [m[K‘[01m[Kkernel7[m[K’ was not declared in this scope
+[2.569s]    98 |     morphologyEx(brightMask, brightMask, MORPH_OPEN, [01;31m[Kkernel7[m[K);
+[2.569s]       |                                                      [01;31m[K^~~~~~~[m[K
+[2.570s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:98:5:[m[K [01;31m[Kerror: [m[K‘[01m[KmorphologyEx[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::morphologyEx[m[K’?
+[2.570s]    98 |     [01;31m[KmorphologyEx[m[K(brightMask, brightMask, MORPH_OPEN, kernel7);
+[2.570s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[2.570s]       |     [32m[Kcv::morphologyEx[m[K
+[2.570s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:2320:19:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::morphologyEx[m[K’ declared here
+[2.570s]  2320 | CV_EXPORTS_W void [01;36m[KmorphologyEx[m[K( InputArray src, OutputArray dst,
+[2.570s]       |                   [01;36m[K^~~~~~~~~~~~[m[K
+[2.570s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:99:42:[m[K [01;31m[Kerror: [m[K‘[01m[KMORPH_CLOSE[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::MORPH_CLOSE[m[K’?
+[2.571s]    99 |     morphologyEx(brightMask, brightMask, [01;31m[KMORPH_CLOSE[m[K, kernel7);
+[2.571s]       |                                          [01;31m[K^~~~~~~~~~~[m[K
+[2.571s]       |                                          [32m[Kcv::MORPH_CLOSE[m[K
+[2.571s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:218:5:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::MORPH_CLOSE[m[K’ declared here
+[2.571s]   218 |     [01;36m[KMORPH_CLOSE[m[K    = 3, //!< a closing operation
+[2.571s]       |     [01;36m[K^~~~~~~~~~~[m[K
+[2.571s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:100:42:[m[K [01;31m[Kerror: [m[K‘[01m[KMORPH_DILATE[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::MORPH_DILATE[m[K’?
+[2.571s]   100 |     morphologyEx(brightMask, brightMask, [01;31m[KMORPH_DILATE[m[K, kernel7);
+[2.572s]       |                                          [01;31m[K^~~~~~~~~~~~[m[K
+[2.572s]       |                                          [32m[Kcv::MORPH_DILATE[m[K
+[2.572s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:215:5:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::MORPH_DILATE[m[K’ declared here
+[2.572s]   215 |     [01;36m[KMORPH_DILATE[m[K   = 1, //!< see #dilate
+[2.572s]       |     [01;36m[K^~~~~~~~~~~~[m[K
+[2.572s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:104:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Khsv[m[K’
+[2.572s]   104 |     Mat[01;31m[K [m[K[32m[Khsv[m[K;
+[2.572s]       |        [01;31m[K^[m[K[32m[K~~~[m[K
+[2.573s]       |        [32m[K;[m[K
+[2.573s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:105:19:[m[K [01;31m[Kerror: [m[K‘[01m[Khsv[m[K’ was not declared in this scope
+[2.573s]   105 |     cvtColor(img, [01;31m[Khsv[m[K, COLOR_BGR2HSV);
+[2.573s]       |                   [01;31m[K^~~[m[K
+[2.573s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:105:24:[m[K [01;31m[Kerror: [m[K‘[01m[KCOLOR_BGR2HSV[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::COLOR_BGR2HSV[m[K’?
+[2.573s]   105 |     cvtColor(img, hsv, [01;31m[KCOLOR_BGR2HSV[m[K);
+[2.573s]       |                        [01;31m[K^~~~~~~~~~~~~[m[K
+[2.573s]       |                        [32m[Kcv::COLOR_BGR2HSV[m[K
+[2.573s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:594:5:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::COLOR_BGR2HSV[m[K’ declared here
+[2.574s]   594 |     [01;36m[KCOLOR_BGR2HSV[m[K      = 40, //!< convert RGB/BGR to HSV (hue saturation value) with H range 0..180 if 8 bit image, @ref color_convert_rgb_hsv "color conversions"
+[2.574s]       |     [01;36m[K^~~~~~~~~~~~~[m[K
+[2.574s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:106:5:[m[K [01;31m[Kerror: [m[K‘[01m[KScalar[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::Scalar[m[K’?
+[2.574s]   106 |     [01;31m[KScalar[m[K lowerBlue(160, 200, 200);
+[2.574s]       |     [01;31m[K^~~~~~[m[K
+[2.574s]       |     [32m[Kcv::Scalar[m[K
+[2.574s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:691:25:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::Scalar[m[K’ declared here
+[2.574s]   691 | typedef Scalar_<double> [01;36m[KScalar[m[K;
+[2.574s]       |                         [01;36m[K^~~~~~[m[K
+[2.574s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:107:11:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KupperBlue[m[K’
+[2.575s]   107 |     Scalar[01;31m[K [m[K[32m[KupperBlue[m[K(180, 255, 255);
+[2.575s]       |           [01;31m[K^[m[K[32m[K~~~~~~~~~[m[K
+[2.575s]       |           [32m[K;[m[K
+[2.575s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:108:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KblueMask[m[K’
+[2.575s]   108 |     Mat[01;31m[K [m[K[32m[KblueMask[m[K;
+[2.575s]       |        [01;31m[K^[m[K[32m[K~~~~~~~~[m[K
+[2.575s]       |        [32m[K;[m[K
+[2.578s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:109:18:[m[K [01;31m[Kerror: [m[K‘[01m[KlowerBlue[m[K’ was not declared in this scope
+[2.578s]   109 |     inRange(hsv, [01;31m[KlowerBlue[m[K, upperBlue, blueMask);
+[2.578s]       |                  [01;31m[K^~~~~~~~~[m[K
+[2.583s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:109:29:[m[K [01;31m[Kerror: [m[K‘[01m[KupperBlue[m[K’ was not declared in this scope
+[2.583s]   109 |     inRange(hsv, lowerBlue, [01;31m[KupperBlue[m[K, blueMask);
+[2.583s]       |                             [01;31m[K^~~~~~~~~[m[K
+[2.587s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:109:40:[m[K [01;31m[Kerror: [m[K‘[01m[KblueMask[m[K’ was not declared in this scope
+[2.588s]   109 |     inRange(hsv, lowerBlue, upperBlue, [01;31m[KblueMask[m[K);
+[2.588s]       |                                        [01;31m[K^~~~~~~~[m[K
+[2.588s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:109:5:[m[K [01;31m[Kerror: [m[K‘[01m[KinRange[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::inRange[m[K’?
+[2.589s]   109 |     [01;31m[KinRange[m[K(hsv, lowerBlue, upperBlue, blueMask);
+[2.589s]       |     [01;31m[K^~~~~~~[m[K
+[2.589s]       |     [32m[Kcv::inRange[m[K
+[2.589s] [01m[K/usr/include/opencv4/opencv2/core.hpp:1429:19:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::inRange[m[K’ declared here
+[2.589s]  1429 | CV_EXPORTS_W void [01;36m[KinRange[m[K(InputArray src, InputArray lowerb,
+[2.589s]       |                   [01;36m[K^~~~~~~[m[K
+[2.589s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:112:8:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[KcombinedMask[m[K’
+[2.589s]   112 |     Mat[01;31m[K [m[K[32m[KcombinedMask[m[K = brightMask; // 使用膨胀后的核心作为最终掩码
+[2.589s]       |        [01;31m[K^[m[K[32m[K~~~~~~~~~~~~[m[K
+[2.589s]       |        [32m[K;[m[K
+[2.590s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:116:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kvector[m[K’ was not declared in this scope
+[2.590s]   116 |     [01;31m[Kvector[m[K<vector<Point>> contours;
+[2.590s]       |     [01;31m[K^~~~~~[m[K
+[2.590s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:116:5:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[2.590s] In file included from [01m[K/usr/include/c++/13/vector:66[m[K,
+[2.590s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:19[m[K,
+[2.590s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[2.590s]                  from [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:4[m[K:
+[2.590s] [01m[K/usr/include/c++/13/bits/stl_vector.h:428:11:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::vector[m[K’
+[2.591s]   428 |     class [01;36m[Kvector[m[K : protected _Vector_base<_Tp, _Alloc>
+[2.591s]       |           [01;36m[K^~~~~~[m[K
+[2.591s] [01m[K/usr/include/c++/13/vector:86:13:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::pmr::vector[m[K’
+[2.591s]    86 |       using [01;36m[Kvector[m[K = std::vector<_Tp, polymorphic_allocator<_Tp>>;
+[2.591s]       |             [01;36m[K^~~~~~[m[K
+[2.591s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:116:19:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint[m[K’ was not declared in this scope
+[2.591s]   116 |     vector<vector<[01;31m[KPoint[m[K>> contours;
+[2.591s]       |                   [01;31m[K^~~~~[m[K
+[2.591s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:116:19:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[2.591s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:204:17:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::Point[m[K’
+[2.592s]   204 | typedef Point2i [01;36m[KPoint[m[K;
+[2.592s]       |                 [01;36m[K^~~~~[m[K
+[2.592s] In file included from [01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose__struct.hpp:23[m[K,
+[2.592s]                  from [01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/pose_with_covariance__struct.hpp:23[m[K,
+[2.592s]                  from [01m[K/opt/ros/jazzy/include/vision_msgs/vision_msgs/msg/detail/object_hypothesis_with_pose__struct.hpp:25[m[K,
+[2.592s]                  from [01m[K/opt/ros/jazzy/include/vision_msgs/vision_msgs/msg/detail/detection2_d__struct.hpp:25[m[K,
+[2.592s]                  from [01m[K/opt/ros/jazzy/include/vision_msgs/vision_msgs/msg/detail/detection2_d_array__struct.hpp:25[m[K,
+[2.592s]                  from [01m[K/opt/ros/jazzy/include/vision_msgs/vision_msgs/msg/detection2_d_array.hpp:7[m[K,
+[2.592s]                  from [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:9[m[K:
+[2.592s] [01m[K/opt/ros/jazzy/include/geometry_msgs/geometry_msgs/msg/detail/point__struct.hpp:153:7:[m[K [01;36m[Knote: [m[K  ‘[01m[Kgeometry_msgs::msg::Point[m[K’
+[2.593s]   153 | using [01;36m[KPoint[m[K =
+[2.593s]       |       [01;36m[K^~~~~[m[K
+[2.593s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:116:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontours[m[K’ was not declared in this scope
+[2.593s]   116 |     vector<vector<Point>> [01;31m[Kcontours[m[K;
+[2.593s]       |                           [01;31m[K^~~~~~~~[m[K
+[2.598s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:117:18:[m[K [01;31m[Kerror: [m[K‘[01m[KcombinedMask[m[K’ was not declared in this scope
+[2.598s]   117 |     findContours([01;31m[KcombinedMask[m[K, contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
+[2.599s]       |                  [01;31m[K^~~~~~~~~~~~[m[K
+[2.599s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:117:42:[m[K [01;31m[Kerror: [m[K‘[01m[KRETR_EXTERNAL[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::RETR_EXTERNAL[m[K’?
+[2.599s]   117 |     findContours(combinedMask, contours, [01;31m[KRETR_EXTERNAL[m[K, CHAIN_APPROX_SIMPLE);
+[2.599s]       |                                          [01;31m[K^~~~~~~~~~~~~[m[K
+[2.600s]       |                                          [32m[Kcv::RETR_EXTERNAL[m[K
+[2.600s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:421:5:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::RETR_EXTERNAL[m[K’ declared here
+[2.600s]   421 |     [01;36m[KRETR_EXTERNAL[m[K  = 0,
+[2.600s]       |     [01;36m[K^~~~~~~~~~~~~[m[K
+[2.600s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:117:57:[m[K [01;31m[Kerror: [m[K‘[01m[KCHAIN_APPROX_SIMPLE[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::CHAIN_APPROX_SIMPLE[m[K’?
+[2.600s]   117 | indContours(combinedMask, contours, RETR_EXTERNAL, [01;31m[KCHAIN_APPROX_SIMPLE[m[K);
+[2.600s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.600s]       |                                                    [32m[Kcv::CHAIN_APPROX_SIMPLE[m[K
+[2.600s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:442:5:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::CHAIN_APPROX_SIMPLE[m[K’ declared here
+[2.601s]   442 |     [01;36m[KCHAIN_APPROX_SIMPLE[m[K    = 2,
+[2.601s]       |     [01;36m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.601s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:117:5:[m[K [01;31m[Kerror: [m[K‘[01m[KfindContours[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::findContours[m[K’?
+[2.601s]   117 |     [01;31m[KfindContours[m[K(combinedMask, contours, RETR_EXTERNAL, CHAIN_APPROX_SIMPLE);
+[2.601s]       |     [01;31m[K^~~~~~~~~~~~[m[K
+[2.601s]       |     [32m[Kcv::findContours[m[K
+[2.601s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:3963:17:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::findContours[m[K’ declared here
+[2.601s]  3963 | CV_EXPORTS void [01;36m[KfindContours[m[K( InputArray image, OutputArrayOfArrays contours,
+[2.601s]       |                 [01;36m[K^~~~~~~~~~~~[m[K
+[2.601s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:120:12:[m[K [01;31m[Kerror: [m[K‘[01m[KRotatedRect[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::RotatedRect[m[K’?
+[2.602s]   120 |     vector<[01;31m[KRotatedRect[m[K> valid_rects;
+[2.602s]       |            [01;31m[K^~~~~~~~~~~[m[K
+[2.602s]       |            [32m[Kcv::RotatedRect[m[K
+[2.602s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:525:18:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::RotatedRect[m[K’ declared here
+[2.602s]   525 | class CV_EXPORTS [01;36m[KRotatedRect[m[K
+[2.602s]       |                  [01;36m[K^~~~~~~~~~~[m[K
+[2.605s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:120:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kvalid_rects[m[K’ was not declared in this scope
+[2.605s]   120 |     vector<RotatedRect> [01;31m[Kvalid_rects[m[K;
+[2.605s]       |                         [01;31m[K^~~~~~~~~~~[m[K
+[2.605s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:122:23:[m[K [01;31m[Kerror: [m[K‘[01m[KcontourArea[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::contourArea[m[K’?
+[2.605s]   122 |         double area = [01;31m[KcontourArea[m[K(contour);
+[2.606s]       |                       [01;31m[K^~~~~~~~~~~[m[K
+[2.606s]       |                       [32m[Kcv::contourArea[m[K
+[2.606s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:4041:21:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::contourArea[m[K’ declared here
+[2.606s]  4041 | CV_EXPORTS_W double [01;36m[KcontourArea[m[K( InputArray contour, bool oriented = false );
+[2.606s]       |                     [01;36m[K^~~~~~~~~~~[m[K
+[2.606s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:125:20:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kmin_rect[m[K’
+[2.606s]   125 |         RotatedRect[01;31m[K [m[K[32m[Kmin_rect[m[K = minAreaRect(contour);
+[2.606s]       |                    [01;31m[K^[m[K[32m[K~~~~~~~~[m[K
+[2.606s]       |                    [32m[K;[m[K
+[2.610s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:128:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_rect[m[K’ was not declared in this scope
+[2.610s]   128 |         double w = [01;31m[Kmin_rect[m[K.size.width;
+[2.610s]       |                    [01;31m[K^~~~~~~~[m[K
+[2.610s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:130:31:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax[m[K’ was not declared in this scope
+[2.610s]   130 |         double aspect_ratio = [01;31m[Kmax[m[K(w, h) / min(w, h);
+[2.611s]       |                               [01;31m[K^~~[m[K
+[2.611s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:130:31:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[2.611s] In file included from [01m[K/usr/include/c++/13/algorithm:61[m[K,
+[2.611s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/detail/list_parameters__struct.hpp:11[m[K,
+[2.611s]                  from [01m[K/opt/ros/jazzy/include/rcl_interfaces/rcl_interfaces/srv/list_parameters.hpp:7[m[K,
+[2.611s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:21[m[K:
+[2.611s] [01m[K/usr/include/c++/13/bits/stl_algo.h:5805:5:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::max[m[K’
+[2.611s]  5805 |     [01;36m[Kmax[m[K(initializer_list<_Tp> __l, _Compare __comp)
+[2.611s]       |     [01;36m[K^~~[m[K
+[2.611s] [01m[K/usr/include/opencv4/opencv2/core.hpp:1500:17:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::max[m[K’
+[2.612s]  1500 | CV_EXPORTS void [01;36m[Kmax[m[K(const UMat& src1, const UMat& src2, UMat& dst);
+[2.612s]       |                 [01;36m[K^~~[m[K
+[2.612s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:130:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin[m[K’ was not declared in this scope
+[2.612s]   130 |         double aspect_ratio = max(w, h) / [01;31m[Kmin[m[K(w, h);
+[2.612s]       |                                           [01;31m[K^~~[m[K
+[2.612s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:130:43:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[2.612s] [01m[K/usr/include/c++/13/bits/stl_algo.h:5785:5:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::min[m[K’
+[2.612s]  5785 |     [01;36m[Kmin[m[K(initializer_list<_Tp> __l, _Compare __comp)
+[2.612s]       |     [01;36m[K^~~[m[K
+[2.612s] [01m[K/usr/include/opencv4/opencv2/core.hpp:1479:17:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::min[m[K’
+[2.612s]  1479 | CV_EXPORTS void [01;36m[Kmin[m[K(const UMat& src1, const UMat& src2, UMat& dst);
+[2.613s]       |                 [01;36m[K^~~[m[K
+[2.613s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:145:5:[m[K [01;31m[Kerror: [m[K‘[01m[KRect[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::Rect[m[K’?
+[2.613s]   145 |     [01;31m[KRect[m[K armorBox; // 用于存储最终装甲板框
+[2.613s]       |     [01;31m[K^~~~[m[K
+[2.613s]       |     [32m[Kcv::Rect[m[K
+[2.613s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:484:16:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::Rect[m[K’ declared here
+[2.613s]   484 | typedef Rect2i [01;36m[KRect[m[K;
+[2.613s]       |                [01;36m[K^~~~[m[K
+[2.613s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:153:17:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint2f[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::Point2f[m[K’?
+[2.613s]   153 |                 [01;31m[KPoint2f[m[K center1 = valid_rects[i].center;
+[2.613s]       |                 [01;31m[K^~~~~~~[m[K
+[2.613s]       |                 [32m[Kcv::Point2f[m[K
+[2.614s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:202:23:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::Point2f[m[K’ declared here
+[2.614s]   202 | typedef Point_<float> [01;36m[KPoint2f[m[K;
+[2.614s]       |                       [01;36m[K^~~~~~~[m[K
+[2.614s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:154:24:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[Kcenter2[m[K’
+[2.614s]   154 |                 Point2f[01;31m[K [m[K[32m[Kcenter2[m[K = valid_rects[j].center;
+[2.614s]       |                        [01;31m[K^[m[K[32m[K~~~~~~~[m[K
+[2.614s]       |                        [32m[K;[m[K
+[2.616s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:156:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kcenter1[m[K’ was not declared in this scope
+[2.616s]   156 |                 double distance = norm([01;31m[Kcenter1[m[K - center2);
+[2.616s]       |                                        [01;31m[K^~~~~~~[m[K
+[2.620s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:156:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kcenter2[m[K’ was not declared in this scope
+[2.620s]   156 |                 double distance = norm(center1 - [01;31m[Kcenter2[m[K);
+[2.620s]       |                                                  [01;31m[K^~~~~~~[m[K
+[2.621s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:156:35:[m[K [01;31m[Kerror: [m[K‘[01m[Knorm[m[K’ was not declared in this scope
+[2.621s]   156 |                 double distance = [01;31m[Knorm[m[K(center1 - center2);
+[2.621s]       |                                   [01;31m[K^~~~[m[K
+[2.621s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:156:35:[m[K [01;36m[Knote: [m[Ksuggested alternatives:
+[2.621s] In file included from [01m[K/usr/include/opencv4/opencv2/core/cvstd.inl.hpp:47[m[K,
+[2.621s]                  from [01m[K/usr/include/opencv4/opencv2/core.hpp:3349[m[K:
+[2.621s] [01m[K/usr/include/c++/13/complex:2448:5:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::norm[m[K’
+[2.621s]  2448 |     [01;36m[Knorm[m[K(_Tp __x)
+[2.621s]       |     [01;36m[K^~~~[m[K
+[2.621s] [01m[K/usr/include/opencv4/opencv2/core.hpp:702:19:[m[K [01;36m[Knote: [m[K  ‘[01m[Kcv::norm[m[K’
+[2.621s]   702 | CV_EXPORTS double [01;36m[Knorm[m[K( const SparseMat& src, int normType );
+[2.621s]       |                   [01;36m[K^~~~[m[K
+[2.622s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:173:13:[m[K [01;31m[Kerror: [m[K‘[01m[KPoint2f[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::Point2f[m[K’?
+[2.622s]   173 |             [01;31m[KPoint2f[m[K pts1[4], pts2[4];
+[2.622s]       |             [01;31m[K^~~~~~~[m[K
+[2.622s]       |             [32m[Kcv::Point2f[m[K
+[2.622s] [01m[K/usr/include/opencv4/opencv2/core/types.hpp:202:23:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::Point2f[m[K’ declared here
+[2.622s]   202 | typedef Point_<float> [01;36m[KPoint2f[m[K;
+[2.622s]       |                       [01;36m[K^~~~~~~[m[K
+[2.624s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:174:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kpts1[m[K’ was not declared in this scope
+[2.624s]   174 |             valid_rects[best_i].points([01;31m[Kpts1[m[K); // 获取灯柱1的4个顶点
+[2.624s]       |                                        [01;31m[K^~~~[m[K
+[2.627s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:175:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kpts2[m[K’ was not declared in this scope
+[2.627s]   175 |             valid_rects[best_j].points([01;31m[Kpts2[m[K); // 获取灯柱2的4个顶点
+[2.628s]       |                                        [01;31m[K^~~~[m[K
+[2.633s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:178:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kall_points[m[K’ was not declared in this scope
+[2.633s]   178 |             vector<Point2f> [01;31m[Kall_points[m[K;
+[2.633s]       |                             [01;31m[K^~~~~~~~~~[m[K
+[2.638s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:185:13:[m[K [01;31m[Kerror: [m[K‘[01m[KarmorBox[m[K’ was not declared in this scope
+[2.638s]   185 |             [01;31m[KarmorBox[m[K = boundingRect(all_points);
+[2.638s]       |             [01;31m[K^~~~~~~~[m[K
+[2.638s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:185:24:[m[K [01;31m[Kerror: [m[K‘[01m[KboundingRect[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::boundingRect[m[K’?
+[2.638s]   185 |             armorBox = [01;31m[KboundingRect[m[K(all_points);
+[2.639s]       |                        [01;31m[K^~~~~~~~~~~~[m[K
+[2.639s]       |                        [32m[Kcv::boundingRect[m[K
+[2.639s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:4009:19:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::boundingRect[m[K’ declared here
+[2.639s]  4009 | CV_EXPORTS_W Rect [01;36m[KboundingRect[m[K( InputArray array );
+[2.639s]       |                   [01;36m[K^~~~~~~~~~~~[m[K
+[2.641s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:203:16:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing vision_msgs::msg::ObjectHypothesisWithPose = struct vision_msgs::msg::ObjectHypothesisWithPose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct vision_msgs::msg::ObjectHypothesisWithPose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kid[m[K’
+[2.642s]   203 |     hypothesis.[01;31m[Kid[m[K = 0; // 使用整数 ID（vision_msgs 在 Jazzy 中为整数类型）
+[2.642s]       |                [01;31m[K^~[m[K
+[2.642s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:204:20:[m[K [01;31m[Kerror: [m[K‘[01m[Kusing vision_msgs::msg::ObjectHypothesisWithPose = struct vision_msgs::msg::ObjectHypothesisWithPose_<std::allocator<void> >[m[K’ {aka ‘[01m[Kstruct vision_msgs::msg::ObjectHypothesisWithPose_<std::allocator<void> >[m[K’} has no member named ‘[01m[Kscore[m[K’
+[2.642s]   204 |         hypothesis.[01;31m[Kscore[m[K = 1.0; // 简单示例，可以传入实际置信度
+[2.642s]       |                    [01;31m[K^~~~~[m[K
+[2.647s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:208:34:[m[K [01;31m[Kerror: [m[K‘[01m[KarmorBox[m[K’ was not declared in this scope
+[2.647s]   208 |         bbox.center.position.x = [01;31m[KarmorBox[m[K.x + armorBox.width / 2.0;
+[2.647s]       |                                  [01;31m[K^~~~~~~~[m[K
+[2.652s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:217:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult[m[K’ was not declared in this scope
+[2.652s]   217 |         rectangle([01;31m[Kresult[m[K, armorBox, Scalar(0, 255, 0), 2); // 装甲板框
+[2.652s]       |                   [01;31m[K^~~~~~[m[K
+[2.652s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:217:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krectangle[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::rectangle[m[K’?
+[2.652s]   217 |         [01;31m[Krectangle[m[K(result, armorBox, Scalar(0, 255, 0), 2); // 装甲板框
+[2.652s]       |         [01;31m[K^~~~~~~~~[m[K
+[2.653s]       |         [32m[Kcv::rectangle[m[K
+[2.653s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:4489:19:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::rectangle[m[K’ declared here
+[2.653s]  4489 | CV_EXPORTS_W void [01;36m[Krectangle[m[K(InputOutputArray img, Rect rec,
+[2.653s]       |                   [01;36m[K^~~~~~~~~[m[K
+[2.656s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:225:33:[m[K [01;31m[Kerror: [m[K‘[01m[KarmorBox[m[K’ was not declared in this scope
+[2.657s]   225 |             int x = std::max(0, [01;31m[KarmorBox[m[K.x);
+[2.657s]       |                                 [01;31m[K^~~~~~~~[m[K
+[2.659s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:257:41:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >::publish(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr&)[m[K’
+[2.659s]   257 |         [01;31m[KpImpl->p_armor_crop_pub->publish(crop_msg)[m[K;
+[2.659s]       |         [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[2.659s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/topic_statistics/subscription_topic_statistics.hpp:31[m[K,
+[2.659s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/subscription.hpp:50[m[K,
+[2.660s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/any_executable.hpp:25[m[K,
+[2.660s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategy.hpp:25[m[K,
+[2.660s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/memory_strategies.hpp:18[m[K,
+[2.660s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor_options.hpp:22[m[K,
+[2.660s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executor.hpp:38[m[K,
+[2.660s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors/multi_threaded_executor.hpp:25[m[K,
+[2.660s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/executors.hpp:21[m[K,
+[2.661s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:172[m[K:
+[2.661s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+[2.661s]   242 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)
+[2.661s]       |   [01;36m[K^~~~~~~[m[K
+[2.661s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.661s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:257:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >[m[K’
+[2.661s]   257 |         [01;36m[KpImpl->p_armor_crop_pub->publish(crop_msg)[m[K;
+[2.662s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[2.662s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const T&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+[2.662s]   296 |   [01;36m[Kpublish[m[K(const T & msg)
+[2.662s]       |   [01;36m[K^~~~~~~[m[K
+[2.662s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.662s] In file included from [01m[K/usr/include/c++/13/bits/move.h:37[m[K,
+[2.662s]                  from [01m[K/usr/include/c++/13/bits/new_allocator.h:36[m[K,
+[2.662s]                  from [01m[K/usr/include/x86_64-linux-gnu/c++/13/bits/c++allocator.h:33[m[K,
+[2.662s]                  from [01m[K/usr/include/c++/13/bits/allocator.h:46[m[K,
+[2.663s]                  from [01m[K/usr/include/c++/13/memory:65[m[K,
+[2.663s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:169[m[K:
+[2.663s] /usr/include/c++/13/type_traits: In substitution of ‘[01m[Ktemplate<bool _Cond, class _Tp> using std::enable_if_t = typename std::enable_if::type [35m[K[with bool _Cond = false; _Tp = void][m[K[m[K’:
+[2.663s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:[m[K   required by substitution of ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, sensor_msgs::msg::Image_<std::allocator<void> > >::value), void> rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >::[01;32m[Kpublish[m[K(const T&) [35m[K[with T = std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >][m[K[m[K’
+[2.663s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:257:41:[m[K   required from here
+[2.663s] [01m[K/usr/include/c++/13/type_traits:2610:11:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, void>[m[K’
+[2.663s]  2610 |     using [01;31m[Kenable_if_t[m[K = typename enable_if<_Cond, _Tp>::type;
+[2.663s]       |           [01;31m[K^~~~~~~~~~~[m[K
+[2.663s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+[2.663s]   326 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, PublishedTypeDeleter> msg)
+[2.664s]       |   [01;36m[K^~~~~~~[m[K
+[2.664s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.664s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:257:41:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >[m[K’
+[2.664s]   257 |         [01;36m[KpImpl->p_armor_crop_pub->publish(crop_msg)[m[K;
+[2.664s]       |         [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[2.664s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const T&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+[2.664s]   376 |   [01;36m[Kpublish[m[K(const T & msg)
+[2.664s]       |   [01;36m[K^~~~~~~[m[K
+[2.664s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.665s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const rcl_serialized_message_t&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s][m[K[m[K’
+[2.665s]   394 |   [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+[2.665s]       |   [01;36m[K^~~~~~~[m[K
+[2.665s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:44:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst rcl_serialized_message_t&[m[K’ {aka ‘[01m[Kconst rcutils_uint8_array_s&[m[K’}
+[2.665s]   394 |   publish([01;36m[Kconst rcl_serialized_message_t & serialized_msg[m[K)
+[2.665s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[2.665s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const rclcpp::SerializedMessage&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+[2.666s]   400 |   [01;36m[Kpublish[m[K(const SerializedMessage & serialized_msg)
+[2.666s]       |   [01;36m[K^~~~~~~[m[K
+[2.666s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’
+[2.666s]   400 |   publish([01;36m[Kconst SerializedMessage & serialized_msg[m[K)
+[2.666s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[2.666s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = sensor_msgs::msg::Image_<std::allocator<void> >][m[K[m[K’
+[2.666s]   414 |   [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)
+[2.667s]       |   [01;36m[K^~~~~~~[m[K
+[2.667s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:64:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’} to ‘[01m[Krclcpp::LoanedMessage<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+[2.667s]   414 | [01;36m[Klcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg[m[K)
+[2.667s]       | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[2.667s] 
+[2.667s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:266:121:[m[K [01;31m[Kerror: [m[K‘[01m[Kresult[m[K’ was not declared in this scope
+[2.668s]   266 | e(msg->header, sensor_msgs::image_encodings::BGR8, [01;31m[Kresult[m[K).toImageMsg();
+[2.668s]       |                                                    [01;31m[K^~~~~~[m[K
+[2.668s] 
+[2.668s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:267:34:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >::publish(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr&)[m[K’
+[2.668s]   267 |     [01;31m[KpImpl->p_img_raw_pub->publish(result_msg)[m[K; // 注意：这里覆盖了原始图像发布，如果需要原始图像，需要创建另一个发布器
+[2.668s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[2.668s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::ros_message_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::ros_message_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::ros_message_type>::allocator_type> >::type>) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+[2.669s]   242 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, ROSMessageTypeDeleter> msg)
+[2.669s]       |   [01;36m[K^~~~~~~[m[K
+[2.669s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:242:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.669s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:267:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >[m[K’
+[2.669s]   267 |     [01;36m[KpImpl->p_img_raw_pub->publish(result_msg)[m[K; // 注意：这里覆盖了原始图像发布，如果需要原始图像，需要创建另一个发布器
+[2.669s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[2.669s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(rosidl_generator_traits::is_message<T>::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::ros_message_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const T&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+[2.669s]   296 |   [01;36m[Kpublish[m[K(const T & msg)
+[2.670s]       |   [01;36m[K^~~~~~~[m[K
+[2.670s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:296:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.670s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(std::unique_ptr<T, typename std::conditional<std::is_same<typename std::allocator_traits<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type>::rebind_alloc<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>, std::allocator<typename rclcpp::TypeAdapter<MessageT>::custom_type> >::value, std::default_delete<typename rclcpp::TypeAdapter<MessageT>::custom_type>, rclcpp::allocator::AllocatorDeleter<typename std::allocator_traits<_Allocator>::rebind_traits<typename rclcpp::TypeAdapter<MessageT, void, void>::custom_type>::allocator_type> >::type>) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+[2.670s]   326 |   [01;36m[Kpublish[m[K(std::unique_ptr<T, PublishedTypeDeleter> msg)
+[2.670s]       |   [01;36m[K^~~~~~~[m[K
+[2.670s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:326:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.670s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:267:34:[m[K [01;36m[Knote: [m[K  ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ is not derived from ‘[01m[Kstd::unique_ptr<T, std::default_delete<sensor_msgs::msg::Image_<std::allocator<void> > > >[m[K’
+[2.670s]   267 |     [01;36m[KpImpl->p_img_raw_pub->publish(result_msg)[m[K; // 注意：这里覆盖了原始图像发布，如果需要原始图像，需要创建另一个发布器
+[2.670s]       |     [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+[2.671s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class T> std::enable_if_t<(typename rclcpp::TypeAdapter<MessageT>::is_specialized::value && std::is_same<T, typename rclcpp::TypeAdapter<MessageT>::custom_type>::value)> rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const T&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+[2.671s]   376 |   [01;36m[Kpublish[m[K(const T & msg)
+[2.671s]       |   [01;36m[K^~~~~~~[m[K
+[2.671s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:376:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.671s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const rcl_serialized_message_t&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; rcl_serialized_message_t = rcutils_uint8_array_s][m[K[m[K’
+[2.671s]   394 |   [01;36m[Kpublish[m[K(const rcl_serialized_message_t & serialized_msg)
+[2.671s]       |   [01;36m[K^~~~~~~[m[K
+[2.671s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:394:44:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst rcl_serialized_message_t&[m[K’ {aka ‘[01m[Kconst rcutils_uint8_array_s&[m[K’}
+[2.671s]   394 |   publish([01;36m[Kconst rcl_serialized_message_t & serialized_msg[m[K)
+[2.672s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[2.672s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(const rclcpp::SerializedMessage&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>][m[K[m[K’
+[2.672s]   400 |   [01;36m[Kpublish[m[K(const SerializedMessage & serialized_msg)
+[2.672s]       |   [01;36m[K^~~~~~~[m[K
+[2.672s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:400:37:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’} to ‘[01m[Kconst rclcpp::SerializedMessage&[m[K’
+[2.672s]   400 |   publish([01;36m[Kconst SerializedMessage & serialized_msg[m[K)
+[2.672s]       |           [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[2.672s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid rclcpp::Publisher<MessageT, AllocatorT>::[01;32m[Kpublish[m[K(rclcpp::LoanedMessage<typename rclcpp::TypeAdapter<MessageT>::ros_message_type, AllocatorT>&&) [35m[K[with MessageT = sensor_msgs::msg::Image_<std::allocator<void> >; AllocatorT = std::allocator<void>; typename rclcpp::TypeAdapter<MessageT>::ros_message_type = sensor_msgs::msg::Image_<std::allocator<void> >][m[K[m[K’
+[2.672s]   414 |   [01;36m[Kpublish[m[K(rclcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg)
+[2.672s]       |   [01;36m[K^~~~~~~[m[K
+[2.672s] [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/publisher.hpp:414:64:[m[K [01;36m[Knote: [m[K  no known conversion for argument 1 from ‘[01m[Ksensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr[m[K’ {aka ‘[01m[Kstd::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’} to ‘[01m[Krclcpp::LoanedMessage<sensor_msgs::msg::Image_<std::allocator<void> >, std::allocator<void> >&&[m[K’
+[2.673s]   414 | [01;36m[Klcpp::LoanedMessage<ROSMessageType, AllocatorT> && loaned_msg[m[K)
+[2.673s]       | [01;36m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[2.673s] 
+[2.673s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K At global scope:
+[2.673s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:270:69:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_FRAME_OUT_INFO_EX[m[K’ has not been declared
+[2.673s]   270 | ver::Impl::image_callback_ex(unsigned char *pData, [01;31m[KMV_FRAME_OUT_INFO_EX[m[K *pFrameInfo, void *pUser) {
+[2.673s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.673s] 
+[2.673s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K In static member function ‘[01m[Kstatic void hikvision_ros2_driver::HikvisionDriver::Impl::[01;32m[Kimage_callback_ex[m[K(unsigned char*, int*, void*)[m[K’:
+[2.673s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:275:48:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KnDevTimeStampHigh[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.674s]   275 |     uint64_t dev_stamp = (uint64_t)pFrameInfo->[01;31m[KnDevTimeStampHigh[m[K << 32ull | (uint64_t)pFrameInfo->nDevTimeStampLow;
+[2.674s]       |                                                [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.674s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:275:99:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KnDevTimeStampLow[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.674s]   275 | nDevTimeStampHigh << 32ull | (uint64_t)pFrameInfo->[01;31m[KnDevTimeStampLow[m[K;
+[2.674s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.674s] 
+[2.674s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:276:39:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KnHostTimeStamp[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.674s]   276 |     uint64_t host_stamp = pFrameInfo->[01;31m[KnHostTimeStamp[m[K;
+[2.674s]       |                                       [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.674s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:280:21:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KnFrameLen[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.674s]   280 |     if (pFrameInfo->[01;31m[KnFrameLen[m[K > p_img_raw_msg->data.max_size()) {
+[2.674s]       |                     [01;31m[K^~~~~~~~~[m[K
+[2.675s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:288:40:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KnWidth[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.675s]   288 |     p_img_raw_msg->width = pFrameInfo->[01;31m[KnWidth[m[K;
+[2.675s]       |                                        [01;31m[K^~~~~~[m[K
+[2.675s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:289:41:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KnHeight[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.675s]   289 |     p_img_raw_msg->height = pFrameInfo->[01;31m[KnHeight[m[K;
+[2.675s]       |                                         [01;31m[K^~~~~~~[m[K
+[2.675s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:290:21:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KenPixelType[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.675s]   290 |     if (pFrameInfo->[01;31m[KenPixelType[m[K == PixelType_Gvsp_BayerRG8) {
+[2.675s]       |                     [01;31m[K^~~~~~~~~~~[m[K
+[2.679s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:290:36:[m[K [01;31m[Kerror: [m[K‘[01m[KPixelType_Gvsp_BayerRG8[m[K’ was not declared in this scope
+[2.679s]   290 |     if (pFrameInfo->enPixelType == [01;31m[KPixelType_Gvsp_BayerRG8[m[K) {
+[2.679s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.679s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:291:43:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KnWidth[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.679s]   291 |         p_img_raw_msg->step = pFrameInfo->[01;31m[KnWidth[m[K * 1;
+[2.679s]       |                                           [01;31m[K^~~~~~[m[K
+[2.679s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:293:28:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KenPixelType[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.680s]   293 |     } else if (pFrameInfo->[01;31m[KenPixelType[m[K == PixelType_Gvsp_BayerBG8) {
+[2.680s]       |                            [01;31m[K^~~~~~~~~~~[m[K
+[2.689s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:293:43:[m[K [01;31m[Kerror: [m[K‘[01m[KPixelType_Gvsp_BayerBG8[m[K’ was not declared in this scope
+[2.690s]   293 |     } else if (pFrameInfo->enPixelType == [01;31m[KPixelType_Gvsp_BayerBG8[m[K) {
+[2.690s]       |                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.690s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:294:43:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KnWidth[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.690s]   294 |         p_img_raw_msg->step = pFrameInfo->[01;31m[KnWidth[m[K * 1;
+[2.690s]       |                                           [01;31m[K^~~~~~[m[K
+[2.690s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:296:28:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KenPixelType[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.690s]   296 |     } else if (pFrameInfo->[01;31m[KenPixelType[m[K == PixelType_Gvsp_BayerGR8) {
+[2.690s]       |                            [01;31m[K^~~~~~~~~~~[m[K
+[2.699s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:296:43:[m[K [01;31m[Kerror: [m[K‘[01m[KPixelType_Gvsp_BayerGR8[m[K’ was not declared in this scope
+[2.699s]   296 |     } else if (pFrameInfo->enPixelType == [01;31m[KPixelType_Gvsp_BayerGR8[m[K) {
+[2.700s]       |                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.700s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:297:43:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KnWidth[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.700s]   297 |         p_img_raw_msg->step = pFrameInfo->[01;31m[KnWidth[m[K * 1;
+[2.700s]       |                                           [01;31m[K^~~~~~[m[K
+[2.700s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:299:28:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KenPixelType[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.700s]   299 |     } else if (pFrameInfo->[01;31m[KenPixelType[m[K == PixelType_Gvsp_BayerGB8) {
+[2.700s]       |                            [01;31m[K^~~~~~~~~~~[m[K
+[2.709s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:299:43:[m[K [01;31m[Kerror: [m[K‘[01m[KPixelType_Gvsp_BayerGB8[m[K’ was not declared in this scope
+[2.709s]   299 |     } else if (pFrameInfo->enPixelType == [01;31m[KPixelType_Gvsp_BayerGB8[m[K) {
+[2.709s]       |                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.709s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:300:43:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KnWidth[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.709s]   300 |         p_img_raw_msg->step = pFrameInfo->[01;31m[KnWidth[m[K * 1;
+[2.710s]       |                                           [01;31m[K^~~~~~[m[K
+[2.710s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:302:28:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KenPixelType[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.710s]   302 |     } else if (pFrameInfo->[01;31m[KenPixelType[m[K == PixelType_Gvsp_Mono8) {
+[2.710s]       |                            [01;31m[K^~~~~~~~~~~[m[K
+[2.718s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:302:43:[m[K [01;31m[Kerror: [m[K‘[01m[KPixelType_Gvsp_Mono8[m[K’ was not declared in this scope
+[2.718s]   302 |     } else if (pFrameInfo->enPixelType == [01;31m[KPixelType_Gvsp_Mono8[m[K) {
+[2.718s]       |                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[2.718s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:303:43:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KnWidth[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.718s]   303 |         p_img_raw_msg->step = pFrameInfo->[01;31m[KnWidth[m[K * 1;
+[2.719s]       |                                           [01;31m[K^~~~~~[m[K
+[2.719s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:305:28:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KenPixelType[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.719s]   305 |     } else if (pFrameInfo->[01;31m[KenPixelType[m[K == PixelType_Gvsp_RGB8_Packed) {
+[2.719s]       |                            [01;31m[K^~~~~~~~~~~[m[K
+[2.729s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:305:43:[m[K [01;31m[Kerror: [m[K‘[01m[KPixelType_Gvsp_RGB8_Packed[m[K’ was not declared in this scope
+[2.729s]   305 |     } else if (pFrameInfo->enPixelType == [01;31m[KPixelType_Gvsp_RGB8_Packed[m[K) {
+[2.729s]       |                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.730s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:306:43:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KnWidth[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.730s]   306 |         p_img_raw_msg->step = pFrameInfo->[01;31m[KnWidth[m[K * 3;
+[2.730s]       |                                           [01;31m[K^~~~~~[m[K
+[2.730s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:308:28:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KenPixelType[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.730s]   308 |     } else if (pFrameInfo->[01;31m[KenPixelType[m[K == PixelType_Gvsp_BGR8_Packed) {
+[2.730s]       |                            [01;31m[K^~~~~~~~~~~[m[K
+[2.741s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:308:43:[m[K [01;31m[Kerror: [m[K‘[01m[KPixelType_Gvsp_BGR8_Packed[m[K’ was not declared in this scope
+[2.741s]   308 |     } else if (pFrameInfo->enPixelType == [01;31m[KPixelType_Gvsp_BGR8_Packed[m[K) {
+[2.741s]       |                                           [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.742s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:309:43:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KnWidth[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.742s]   309 |         p_img_raw_msg->step = pFrameInfo->[01;31m[KnWidth[m[K * 3;
+[2.742s]       |                                           [01;31m[K^~~~~~[m[K
+[2.742s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logging.hpp:24[m[K,
+[2.742s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K:
+[2.742s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:312:122:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KenPixelType[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.742s]   312 | for sensor_msgs::msg::Image: %d", (int)pFrameInfo->[01;31m[KenPixelType[m[K);
+[2.742s]       |                                                    [01;31m[K^~~~~~~~~~~[m[K
+[2.743s] 
+[2.743s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:316:21:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KnFrameLen[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.743s]   316 |     if (pFrameInfo->[01;31m[KnFrameLen[m[K < p_img_raw_msg->data.size()) {
+[2.743s]       |                     [01;31m[K^~~~~~~~~[m[K
+[2.743s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:317:117:[m[K [01;31m[Kerror: [m[Krequest for member ‘[01m[KnFrameLen[m[K’ in ‘[01m[K* pFrameInfo[m[K’, which is of non-class type ‘[01m[Kint[m[K’
+[2.743s]   317 |  for sensor_msgs::msg::Image, len=%d", pFrameInfo->[01;31m[KnFrameLen[m[K);
+[2.743s]       |                                                    [01;31m[K^~~~~~~~~[m[K
+[2.744s] 
+[2.744s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:323:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass hikvision_ros2_driver::HikvisionDriver[m[K’ has no member named ‘[01m[Kget_graph_interface[m[K’; did you mean ‘[01m[Kget_node_graph_interface[m[K’?
+[2.744s]   323 | ub->handle_message(std::move(p_img_raw_msg), node->[01;31m[Kget_graph_interface[m[K()->get_publisher_handle(node->pImpl->p_img_raw_pub));
+[2.744s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.744s]       |                                                    [32m[Kget_node_graph_interface[m[K
+[2.758s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K In lambda function:
+[2.758s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:376:39:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_SetFloatValue[m[K’ was not declared in this scope
+[2.758s]   376 |                             int ret = [01;31m[KMV_CC_SetFloatValue[m[K(pImpl->handle, "ExposureTime", (float)v);
+[2.759s]       |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.763s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:377:33:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_OK[m[K’ was not declared in this scope
+[2.763s]   377 |                             if ([01;31m[KMV_OK[m[K != ret) {
+[2.763s]       |                                 [01;31m[K^~~~~[m[K
+[2.772s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:385:39:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_SetFloatValue[m[K’ was not declared in this scope
+[2.772s]   385 |                             int ret = [01;31m[KMV_CC_SetFloatValue[m[K(pImpl->handle, "Gain", (float)g);
+[2.772s]       |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.776s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:386:33:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_OK[m[K’ was not declared in this scope
+[2.776s]   386 |                             if ([01;31m[KMV_OK[m[K != ret) {
+[2.776s]       |                                 [01;31m[K^~~~~[m[K
+[2.784s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:394:39:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_SetFloatValue[m[K’ was not declared in this scope
+[2.785s]   394 |                             int ret = [01;31m[KMV_CC_SetFloatValue[m[K(pImpl->handle, "AcquisitionFrameRate", (float)f);
+[2.785s]       |                                       [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.788s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:395:33:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_OK[m[K’ was not declared in this scope
+[2.788s]   395 |                             if ([01;31m[KMV_OK[m[K != ret) {
+[2.788s]       |                                 [01;31m[K^~~~~[m[K
+[2.807s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K In constructor ‘[01m[Khikvision_ros2_driver::HikvisionDriver::[01;32m[KHikvisionDriver[m[K(const rclcpp::NodeOptions&)[m[K’:
+[2.807s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:436:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_DEVICE_INFO_LIST[m[K’ was not declared in this scope
+[2.807s]   436 |     [01;31m[KMV_CC_DEVICE_INFO_LIST[m[K stDeviceList;
+[2.807s]       |     [01;31m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.813s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:437:13:[m[K [01;31m[Kerror: [m[K‘[01m[KstDeviceList[m[K’ was not declared in this scope
+[2.814s]   437 |     memset(&[01;31m[KstDeviceList[m[K, 0, sizeof(MV_CC_DEVICE_INFO_LIST));
+[2.814s]       |             [01;31m[K^~~~~~~~~~~~[m[K
+[2.822s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:438:22:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_EnumDevices[m[K’ was not declared in this scope
+[2.822s]   438 |     MV_CHECK(logger, [01;31m[KMV_CC_EnumDevices[m[K, MV_GIGE_DEVICE | MV_USB_DEVICE, &stDeviceList);
+[2.822s]       |                      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.828s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:438:41:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_GIGE_DEVICE[m[K’ was not declared in this scope
+[2.828s]   438 |     MV_CHECK(logger, MV_CC_EnumDevices, [01;31m[KMV_GIGE_DEVICE[m[K | MV_USB_DEVICE, &stDeviceList);
+[2.829s]       |                                         [01;31m[K^~~~~~~~~~~~~~[m[K
+[2.835s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:438:58:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_USB_DEVICE[m[K’ was not declared in this scope
+[2.835s]   438 | _CHECK(logger, MV_CC_EnumDevices, MV_GIGE_DEVICE | [01;31m[KMV_USB_DEVICE[m[K, &stDeviceList);
+[2.835s]       |                                                    [01;31m[K^~~~~~~~~~~~~[m[K
+[2.836s] 
+[2.840s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:438:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CHECK[m[K’ was not declared in this scope; did you mean ‘[01m[KCV_CHECK[m[K’?
+[2.840s]   438 |     [01;31m[KMV_CHECK[m[K(logger, MV_CC_EnumDevices, MV_GIGE_DEVICE | MV_USB_DEVICE, &stDeviceList);
+[2.840s]       |     [01;31m[K^~~~~~~~[m[K
+[2.840s]       |     [32m[KCV_CHECK[m[K
+[2.850s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:484:30:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_CreateHandle[m[K’ was not declared in this scope
+[2.850s]   484 |             MV_CHECK(logger, [01;31m[KMV_CC_CreateHandle[m[K, &pImpl->handle, pDeviceInfo);
+[2.851s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.858s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:485:30:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_OpenDevice[m[K’ was not declared in this scope
+[2.858s]   485 |             MV_CHECK(logger, [01;31m[KMV_CC_OpenDevice[m[K, pImpl->handle);
+[2.858s]       |                              [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.870s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:501:30:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_RegisterImageCallBackEx[m[K’ was not declared in this scope
+[2.870s]   501 |             MV_CHECK(logger, [01;31m[KMV_CC_RegisterImageCallBackEx[m[K, pImpl->handle, &HikvisionDriver::Impl::image_callback_ex,
+[2.871s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.879s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:503:30:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_StartGrabbing[m[K’ was not declared in this scope
+[2.879s]   503 |             MV_CHECK(logger, [01;31m[KMV_CC_StartGrabbing[m[K, pImpl->handle);
+[2.879s]       |                              [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.888s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:523:26:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_CreateHandle[m[K’ was not declared in this scope
+[2.888s]   523 |         MV_CHECK(logger, [01;31m[KMV_CC_CreateHandle[m[K, &pImpl->handle, pFirstDev);
+[2.888s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.896s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:524:26:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_OpenDevice[m[K’ was not declared in this scope
+[2.896s]   524 |         MV_CHECK(logger, [01;31m[KMV_CC_OpenDevice[m[K, pImpl->handle);
+[2.896s]       |                          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[2.908s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:525:26:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_RegisterImageCallBackEx[m[K’ was not declared in this scope
+[2.908s]   525 |         MV_CHECK(logger, [01;31m[KMV_CC_RegisterImageCallBackEx[m[K, pImpl->handle, &HikvisionDriver::Impl::image_callback_ex,
+[2.908s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.916s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:527:26:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_StartGrabbing[m[K’ was not declared in this scope
+[2.916s]   527 |         MV_CHECK(logger, [01;31m[KMV_CC_StartGrabbing[m[K, pImpl->handle);
+[2.916s]       |                          [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.917s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K In lambda function:
+[2.917s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:552:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass hikvision_ros2_driver::HikvisionDriver[m[K’ has no member named ‘[01m[Kget_graph_interface[m[K’; did you mean ‘[01m[Kget_node_graph_interface[m[K’?
+[2.917s]   552 | l->p_img_sub->handle_message(std::move(img), this->[01;31m[Kget_graph_interface[m[K()->get_publisher_handle(pImpl->p_img_raw_pub));
+[2.917s]       |                                                    [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[2.918s]       |                                                    [32m[Kget_node_graph_interface[m[K
+[2.930s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K In destructor ‘[01m[Kvirtual hikvision_ros2_driver::HikvisionDriver::[01;32m[K~HikvisionDriver[m[K()[m[K’:
+[2.931s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:569:22:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_StopGrabbing[m[K’ was not declared in this scope
+[2.931s]   569 |     MV_CHECK(logger, [01;31m[KMV_CC_StopGrabbing[m[K, pImpl->handle);
+[2.931s]       |                      [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+[2.936s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:569:5:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CHECK[m[K’ was not declared in this scope; did you mean ‘[01m[KCV_CHECK[m[K’?
+[2.936s]   569 |     [01;31m[KMV_CHECK[m[K(logger, MV_CC_StopGrabbing, pImpl->handle);
+[2.936s]       |     [01;31m[K^~~~~~~~[m[K
+[2.936s]       |     [32m[KCV_CHECK[m[K
+[2.943s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:570:22:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_CloseDevice[m[K’ was not declared in this scope
+[2.943s]   570 |     MV_CHECK(logger, [01;31m[KMV_CC_CloseDevice[m[K, pImpl->handle);
+[2.943s]       |                      [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.951s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:571:22:[m[K [01;31m[Kerror: [m[K‘[01m[KMV_CC_DestroyHandle[m[K’ was not declared in this scope
+[2.952s]   571 |     MV_CHECK(logger, [01;31m[KMV_CC_DestroyHandle[m[K, pImpl->handle);
+[2.952s]       |                      [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+[4.990s] gmake[2]: *** [CMakeFiles/hikvision_ros2_driver.dir/build.make:76: CMakeFiles/hikvision_ros2_driver.dir/src/hikvision_ros2_driver.cpp.o] Error 1
+[4.990s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/hikvision_ros2_driver.dir/all] Error 2
+[4.990s] gmake: *** [Makefile:146: all] Error 2
+[4.996s] Invoked command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver' returned '2': AMENT_PREFIX_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/opt/ros/jazzy:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/ros/jazzy/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver -- -j16 -l16

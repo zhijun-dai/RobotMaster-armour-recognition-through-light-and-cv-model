@@ -1,0 +1,36 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from hikvision_interface/msg/HikImageInfo.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+#include "std_msgs/msg/Header.idl"
+
+module hikvision_interface {
+  module msg {
+    @verbatim (language="comment", text=
+      "header")
+    struct HikImageInfo {
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "sensor stamp")
+      builtin_interfaces::msg::Time dev_stamp;
+
+      uint32 frame_num;
+
+      @verbatim (language="comment", text=
+        "acqusistion")
+      float gain;
+
+      float exposure;
+
+      @verbatim (language="comment", text=
+        "white balance")
+      uint32 red;
+
+      uint32 green;
+
+      uint32 blue;
+    };
+  };
+};

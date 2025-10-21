@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-RelWithDebInfo-98a0f735c0534b80fefc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.15"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "RelWithDebInfo",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "hikvision_ros2_driver",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_ros2_driver::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_ros2_driver-RelWithDebInfo-94788239a48459300b71.json",
+					"name" : "hikvision_ros2_driver",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_ros2_driver_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_ros2_driver_node-RelWithDebInfo-0c9c712ebe548cde2103.json",
+					"name" : "hikvision_ros2_driver_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "hikvision_ros2_driver_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-hikvision_ros2_driver_uninstall-RelWithDebInfo-3188d3d50b65db9b6090.json",
+					"name" : "hikvision_ros2_driver_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-RelWithDebInfo-01b1db038a6b8a17d6df.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver",
+		"source" : "/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,204 @@
+[0.011s] Invoking command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface
+[0.131s] -- The C compiler identification is GNU 13.3.0
+[0.233s] -- The CXX compiler identification is GNU 13.3.0
+[0.270s] -- Detecting C compiler ABI info
+[0.436s] -- Detecting C compiler ABI info - done
+[0.443s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.445s] -- Detecting C compile features
+[0.445s] -- Detecting C compile features - done
+[0.459s] -- Detecting CXX compiler ABI info
+[0.580s] -- Detecting CXX compiler ABI info - done
+[0.593s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.593s] -- Detecting CXX compile features
+[0.594s] -- Detecting CXX compile features - done
+[0.597s] -- Found ament_cmake: 2.5.4 (/opt/ros/jazzy/share/ament_cmake/cmake)
+[0.791s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.869s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.901s] -- Found std_msgs: 5.3.6 (/opt/ros/jazzy/share/std_msgs/cmake)
+[0.935s] -- Found rosidl_generator_c: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.944s] -- Found rosidl_generator_cpp: 4.6.6 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.958s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.972s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.998s] -- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)
+[1.007s] -- Found rosidl_adapter: 4.6.6 (/opt/ros/jazzy/share/rosidl_adapter/cmake)
+[1.771s] -- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[2.849s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.221s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.228s] -- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)
+[3.426s] -- Found PythonExtra: /usr/bin/python3  
+[4.009s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed 
+[4.084s] -- Found ament_lint_auto: 0.17.3 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+[4.109s] -- Added test 'lint_cmake' to check CMake code style
+[4.110s] -- Added test 'xmllint' to check XML markup files
+[4.112s] -- Configuring done (4.1s)
+[4.135s] -- Generating done (0.0s)
+[4.142s] -- Build files have been written to: /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface
+[4.151s] Invoked command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_interface -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface
+[4.153s] Invoking command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface -- -j16 -l16
+[4.256s] [  2%] [34m[1mGenerating type hashes for ROS interfaces[0m
+[4.272s] [  2%] Built target ament_cmake_python_symlink_hikvision_interface
+[4.424s] running egg_info
+[4.424s] creating hikvision_interface.egg-info
+[4.432s] writing hikvision_interface.egg-info/PKG-INFO
+[4.432s] writing dependency_links to hikvision_interface.egg-info/dependency_links.txt
+[4.432s] writing top-level names to hikvision_interface.egg-info/top_level.txt
+[4.433s] writing manifest file 'hikvision_interface.egg-info/SOURCES.txt'
+[4.439s] [  2%] Built target hikvision_interface__rosidl_generator_type_description
+[4.453s] reading manifest file 'hikvision_interface.egg-info/SOURCES.txt'
+[4.454s] writing manifest file 'hikvision_interface.egg-info/SOURCES.txt'
+[4.461s] [  5%] [34m[1mGenerating C code for ROS interfaces[0m
+[4.478s] [  5%] Built target ament_cmake_python_build_hikvision_interface_egg
+[4.483s] [  8%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[4.691s] [  8%] Built target hikvision_interface__cpp
+[4.727s] [ 14%] [32mBuilding C object CMakeFiles/hikvision_interface__rosidl_generator_c.dir/rosidl_generator_c/hikvision_interface/msg/detail/hik_image_info__functions.c.o[0m
+[4.727s] [ 14%] [32mBuilding C object CMakeFiles/hikvision_interface__rosidl_generator_c.dir/rosidl_generator_c/hikvision_interface/msg/detail/hik_image_info__description.c.o[0m
+[4.731s] [ 17%] [32mBuilding C object CMakeFiles/hikvision_interface__rosidl_generator_c.dir/rosidl_generator_c/hikvision_interface/msg/detail/hik_image_info__type_support.c.o[0m
+[4.780s] [ 20%] [32m[1mLinking C shared library libhikvision_interface__rosidl_generator_c.so[0m
+[4.853s] [ 20%] Built target hikvision_interface__rosidl_generator_c
+[4.869s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.871s] [ 29%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.872s] [ 29%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.872s] [ 32%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.873s] [ 38%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.873s] [ 38%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[5.047s] [ 41%] [32mBuilding CXX object CMakeFiles/hikvision_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/hikvision_interface/msg/hik_image_info__type_support.cpp.o[0m
+[5.054s] [ 44%] [32mBuilding CXX object CMakeFiles/hikvision_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/hikvision_interface/msg/hik_image_info__type_support.cpp.o[0m
+[5.056s] [ 47%] [32mBuilding C object CMakeFiles/hikvision_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/hikvision_interface/msg/detail/hik_image_info__type_support.c.o[0m
+[5.060s] [ 50%] [32mBuilding CXX object CMakeFiles/hikvision_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/hikvision_interface/msg/detail/dds_fastrtps/hik_image_info__type_support.cpp.o[0m
+[5.060s] [ 52%] [32mBuilding CXX object CMakeFiles/hikvision_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/hikvision_interface/msg/detail/hik_image_info__type_support_c.cpp.o[0m
+[5.070s] [ 55%] [32mBuilding CXX object CMakeFiles/hikvision_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/hikvision_interface/msg/detail/hik_image_info__type_support.cpp.o[0m
+[5.089s] [ 58%] [32m[1mLinking C shared library libhikvision_interface__rosidl_typesupport_introspection_c.so[0m
+[5.110s] [ 61%] [32m[1mLinking CXX shared library libhikvision_interface__rosidl_typesupport_c.so[0m
+[5.112s] [ 61%] Built target hikvision_interface__rosidl_typesupport_introspection_c
+[5.143s] [ 61%] Built target hikvision_interface__rosidl_typesupport_c
+[5.269s] [ 64%] [32m[1mLinking CXX shared library libhikvision_interface__rosidl_typesupport_cpp.so[0m
+[5.270s] [ 67%] [32m[1mLinking CXX shared library libhikvision_interface__rosidl_typesupport_introspection_cpp.so[0m
+[5.334s] [ 70%] [32m[1mLinking CXX shared library libhikvision_interface__rosidl_typesupport_fastrtps_c.so[0m
+[5.334s] [ 70%] Built target hikvision_interface__rosidl_typesupport_cpp
+[5.336s] [ 73%] [32m[1mLinking CXX shared library libhikvision_interface__rosidl_typesupport_fastrtps_cpp.so[0m
+[5.346s] [ 73%] Built target hikvision_interface__rosidl_typesupport_introspection_cpp
+[5.399s] [ 73%] Built target hikvision_interface__rosidl_typesupport_fastrtps_c
+[5.399s] [ 73%] Built target hikvision_interface__rosidl_typesupport_fastrtps_cpp
+[5.438s] [ 73%] Built target hikvision_interface
+[5.477s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[5.720s] [ 76%] Built target hikvision_interface__py
+[5.757s] [ 79%] [32mBuilding C object CMakeFiles/hikvision_interface__rosidl_generator_py.dir/rosidl_generator_py/hikvision_interface/msg/_hik_image_info_s.c.o[0m
+[5.898s] [ 82%] [32m[1mLinking C shared library libhikvision_interface__rosidl_generator_py.so[0m
+[5.970s] [ 82%] Built target hikvision_interface__rosidl_generator_py
+[6.013s] [ 88%] [32mBuilding C object CMakeFiles/hikvision_interface_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/hikvision_interface/_hikvision_interface_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[6.013s] [ 88%] [32mBuilding C object CMakeFiles/hikvision_interface_s__rosidl_typesupport_c.dir/rosidl_generator_py/hikvision_interface/_hikvision_interface_s.ep.rosidl_typesupport_c.c.o[0m
+[6.014s] [ 91%] [32mBuilding C object CMakeFiles/hikvision_interface_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/hikvision_interface/_hikvision_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[6.108s] [ 94%] [32m[1mLinking C shared module rosidl_generator_py/hikvision_interface/hikvision_interface_s__rosidl_typesupport_introspection_c.so[0m
+[6.110s] [ 97%] [32m[1mLinking C shared module rosidl_generator_py/hikvision_interface/hikvision_interface_s__rosidl_typesupport_fastrtps_c.so[0m
+[6.113s] [100%] [32m[1mLinking C shared module rosidl_generator_py/hikvision_interface/hikvision_interface_s__rosidl_typesupport_c.so[0m
+[6.160s] [100%] Built target hikvision_interface_s__rosidl_typesupport_fastrtps_c
+[6.160s] [100%] Built target hikvision_interface_s__rosidl_typesupport_introspection_c
+[6.166s] [100%] Built target hikvision_interface_s__rosidl_typesupport_c
+[6.191s] Invoked command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface -- -j16 -l16
+[6.210s] Invoking command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface
+[6.223s] -- Install configuration: ""
+[6.223s] -- Execute custom install script
+[6.223s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/ament_index/resource_index/rosidl_interfaces/hikvision_interface
+[6.240s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/msg/HikImageInfo.json
+[6.258s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/detail/hik_image_info__functions.h
+[6.274s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/detail/hik_image_info__struct.h
+[6.292s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/detail/hik_image_info__type_support.h
+[6.308s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/hik_image_info.h
+[6.325s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/rosidl_generator_c__visibility_control.h
+[6.342s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/environment/library_path.sh
+[6.354s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/environment/library_path.dsv
+[6.364s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/detail/hik_image_info__rosidl_typesupport_fastrtps_c.h
+[6.382s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[6.398s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/detail/hik_image_info__builder.hpp
+[6.411s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/detail/hik_image_info__struct.hpp
+[6.430s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/detail/hik_image_info__traits.hpp
+[6.450s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/detail/hik_image_info__type_support.hpp
+[6.469s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/hik_image_info.hpp
+[6.488s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/rosidl_generator_cpp__visibility_control.hpp
+[6.504s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/detail/hik_image_info__rosidl_typesupport_fastrtps_cpp.hpp
+[6.515s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[6.526s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/detail/hik_image_info__rosidl_typesupport_introspection_c.h
+[6.544s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[6.559s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/include/hikvision_interface/hikvision_interface/msg/detail/hik_image_info__rosidl_typesupport_introspection_cpp.hpp
+[6.576s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/environment/pythonpath.sh
+[6.594s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/environment/pythonpath.dsv
+[6.612s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface-0.0.0-py3.12.egg-info/PKG-INFO
+[6.629s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface-0.0.0-py3.12.egg-info/SOURCES.txt
+[6.643s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface-0.0.0-py3.12.egg-info/dependency_links.txt
+[6.653s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface-0.0.0-py3.12.egg-info/top_level.txt
+[6.671s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/__init__.py
+[6.688s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/_hikvision_interface_s.ep.rosidl_typesupport_c.c
+[6.703s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/_hikvision_interface_s.ep.rosidl_typesupport_fastrtps_c.c
+[6.719s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/_hikvision_interface_s.ep.rosidl_typesupport_introspection_c.c
+[6.733s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/hikvision_interface_s__rosidl_typesupport_c.so
+[6.749s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/hikvision_interface_s__rosidl_typesupport_fastrtps_c.so
+[6.767s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/hikvision_interface_s__rosidl_typesupport_introspection_c.so
+[6.783s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/msg/__init__.py
+[6.797s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/msg/_hik_image_info.py
+[6.807s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/msg/_hik_image_info_s.c
+[6.814s] -- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/hikvision_interface_s__rosidl_typesupport_fastrtps_c.so
+[6.814s] -- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/hikvision_interface_s__rosidl_typesupport_introspection_c.so
+[6.815s] -- Up-to-date symlink: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/hikvision_interface_s__rosidl_typesupport_c.so
+[6.815s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/msg/HikImageInfo.idl
+[6.830s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/msg/HikImageInfo.msg
+[6.849s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/ament_index/resource_index/package_run_dependencies/hikvision_interface
+[6.865s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/ament_index/resource_index/parent_prefix_path/hikvision_interface
+[6.879s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/environment/ament_prefix_path.sh
+[6.896s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/environment/ament_prefix_path.dsv
+[6.910s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/environment/path.sh
+[6.920s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/environment/path.dsv
+[6.936s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/local_setup.bash
+[6.951s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/local_setup.sh
+[6.960s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/local_setup.zsh
+[6.969s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/local_setup.dsv
+[6.976s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/package.dsv
+[6.993s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/ament_index/resource_index/packages/hikvision_interface
+[7.007s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/rosidl_cmake-extras.cmake
+[7.022s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/ament_cmake_export_dependencies-extras.cmake
+[7.037s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/ament_cmake_export_include_directories-extras.cmake
+[7.055s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/ament_cmake_export_libraries-extras.cmake
+[7.072s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/ament_cmake_export_targets-extras.cmake
+[7.087s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[7.097s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[7.113s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/hikvision_interfaceConfig.cmake
+[7.127s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/hikvision_interfaceConfig-version.cmake
+[7.143s] -- Symlinking: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/package.xml
+[7.158s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_generator_c.so
+[7.159s] -- Set non-toolchain portion of runtime path of "/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_generator_c.so" to ""
+[7.159s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_typesupport_fastrtps_c.so
+[7.159s] -- Set non-toolchain portion of runtime path of "/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_typesupport_fastrtps_c.so" to ""
+[7.160s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_typesupport_fastrtps_cpp.so
+[7.160s] -- Set non-toolchain portion of runtime path of "/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_typesupport_fastrtps_cpp.so" to ""
+[7.160s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_typesupport_introspection_c.so
+[7.160s] -- Set non-toolchain portion of runtime path of "/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_typesupport_introspection_c.so" to ""
+[7.161s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_typesupport_c.so
+[7.161s] -- Set non-toolchain portion of runtime path of "/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_typesupport_c.so" to ""
+[7.161s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_typesupport_introspection_cpp.so
+[7.161s] -- Set non-toolchain portion of runtime path of "/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_typesupport_introspection_cpp.so" to ""
+[7.162s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_typesupport_cpp.so
+[7.162s] -- Set non-toolchain portion of runtime path of "/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_typesupport_cpp.so" to ""
+[7.208s] Listing '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface'...
+[7.208s] Compiling '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/__init__.py'...
+[7.208s] Listing '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/msg'...
+[7.208s] Compiling '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/msg/__init__.py'...
+[7.208s] Compiling '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages/hikvision_interface/msg/_hik_image_info.py'...
+[7.212s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_generator_py.so
+[7.212s] -- Set non-toolchain portion of runtime path of "/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/libhikvision_interface__rosidl_generator_py.so" to ""
+[7.212s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/export_hikvision_interface__rosidl_generator_cExport.cmake
+[7.212s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/export_hikvision_interface__rosidl_generator_cExport-noconfig.cmake
+[7.212s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/export_hikvision_interface__rosidl_typesupport_fastrtps_cExport.cmake
+[7.213s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/export_hikvision_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[7.213s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/export_hikvision_interface__rosidl_generator_cppExport.cmake
+[7.213s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/export_hikvision_interface__rosidl_typesupport_fastrtps_cppExport.cmake
+[7.213s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/export_hikvision_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[7.213s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/hikvision_interface__rosidl_typesupport_introspection_cExport.cmake
+[7.213s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/hikvision_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[7.214s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/hikvision_interface__rosidl_typesupport_cExport.cmake
+[7.214s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/hikvision_interface__rosidl_typesupport_cExport-noconfig.cmake
+[7.214s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/hikvision_interface__rosidl_typesupport_introspection_cppExport.cmake
+[7.214s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/hikvision_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[7.214s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/hikvision_interface__rosidl_typesupport_cppExport.cmake
+[7.214s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/hikvision_interface__rosidl_typesupport_cppExport-noconfig.cmake
+[7.215s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/export_hikvision_interface__rosidl_generator_pyExport.cmake
+[7.215s] -- Installing: /home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/cmake/export_hikvision_interface__rosidl_generator_pyExport-noconfig.cmake
+[7.220s] Invoked command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface

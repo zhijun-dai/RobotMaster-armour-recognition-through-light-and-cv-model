@@ -1,0 +1,1 @@
+/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface/rosidl_typesupport_fastrtps_c/hikvision_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h

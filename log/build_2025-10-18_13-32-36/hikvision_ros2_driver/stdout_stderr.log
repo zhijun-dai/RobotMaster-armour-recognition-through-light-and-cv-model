@@ -1,0 +1,82 @@
+[ 50%] Built target hikvision_ros2_driver_node
+[ 75%] [32mBuilding CXX object CMakeFiles/hikvision_ros2_driver.dir/src/hikvision_ros2_driver.cpp.o[0m
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K In lambda function:
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:275:13:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+  275 |             [01;35m[Kif[m[K (!result.successful) result.reason = failed_msg; return result;
+      |             [01;35m[K^~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:275:65:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+  275 | f (!result.successful) result.reason = failed_msg; [01;36m[Kreturn[m[K result;
+      |                                                    [01;36m[K^~~~~~[m[K
+
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K In destructor ‘[01m[Kvirtual hikvision_ros2_driver::HikvisionDriver::[01;32m[K~HikvisionDriver[m[K()[m[K’:
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:376:5:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+  376 |     [01;35m[Kif[m[K (!pImpl) return; if (pImpl->handle == nullptr) return; auto logger = get_logger();
+      |     [01;35m[K^~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:376:25:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+  376 |     if (!pImpl) return; [01;36m[Kif[m[K (pImpl->handle == nullptr) return; auto logger = get_logger();
+      |                         [01;36m[K^~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K At global scope:
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:386:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  386 |     [01;31m[Kif[m[K (!pImpl) return;
+      |     [01;31m[K^~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:387:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kif[m[K’
+  387 |     [01;31m[Kif[m[K (pImpl->handle == nullptr) return;
+      |     [01;31m[K^~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:388:19:[m[K [01;31m[Kerror: [m[K‘[01m[Kget_logger[m[K’ was not declared in this scope; did you mean ‘[01m[Krclcpp::get_logger[m[K’?
+  388 |     auto logger = [01;31m[Kget_logger[m[K();
+      |                   [01;31m[K^~~~~~~~~~[m[K
+      |                   [32m[Krclcpp::get_logger[m[K
+In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:26[m[K,
+                 from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+                 from [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:4[m[K:
+[01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/logger.hpp:107:17:[m[K [01;36m[Knote: [m[K‘[01m[Krclcpp::get_logger[m[K’ declared here
+  107 |   friend Logger [01;36m[Krclcpp[m[K::get_logger(const std::string & name);
+      |                 [01;36m[K^~~~~~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:32:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+   32 |     [01;31m[Kdo[m[K {                                                                                            \
+      |     [01;31m[K^~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:390:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KMV_CHECK[m[K’
+  390 |     [01;36m[KMV_CHECK[m[K(logger, MV_CC_StopGrabbing, pImpl->handle);
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:37:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+   37 |     } [01;31m[Kwhile[m[K (0)
+      |       [01;31m[K^~~~~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:390:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KMV_CHECK[m[K’
+  390 |     [01;36m[KMV_CHECK[m[K(logger, MV_CC_StopGrabbing, pImpl->handle);
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:32:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+   32 |     [01;31m[Kdo[m[K {                                                                                            \
+      |     [01;31m[K^~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:391:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KMV_CHECK[m[K’
+  391 |     [01;36m[KMV_CHECK[m[K(logger, MV_CC_CloseDevice, pImpl->handle);
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:37:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+   37 |     } [01;31m[Kwhile[m[K (0)
+      |       [01;31m[K^~~~~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:391:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KMV_CHECK[m[K’
+  391 |     [01;36m[KMV_CHECK[m[K(logger, MV_CC_CloseDevice, pImpl->handle);
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:32:5:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kdo[m[K’
+   32 |     [01;31m[Kdo[m[K {                                                                                            \
+      |     [01;31m[K^~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:392:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KMV_CHECK[m[K’
+  392 |     [01;36m[KMV_CHECK[m[K(logger, MV_CC_DestroyHandle, pImpl->handle);
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:37:7:[m[K [01;31m[Kerror: [m[Kexpected unqualified-id before ‘[01m[Kwhile[m[K’
+   37 |     } [01;31m[Kwhile[m[K (0)
+      |       [01;31m[K^~~~~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:392:5:[m[K [01;36m[Knote: [m[Kin expansion of macro ‘[01m[KMV_CHECK[m[K’
+  392 |     [01;36m[KMV_CHECK[m[K(logger, MV_CC_DestroyHandle, pImpl->handle);
+      |     [01;36m[K^~~~~~~~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:393:5:[m[K [01;31m[Kerror: [m[K‘[01m[KpImpl[m[K’ does not name a type
+  393 |     [01;31m[KpImpl[m[K->handle = nullptr;
+      |     [01;31m[K^~~~~[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:394:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  394 | [01;31m[K}[m[K
+      | [01;31m[K^[m[K
+[01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:396:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+  396 | [01;31m[K}[m[K  // namespace hikvision_ros2_driver
+      | [01;31m[K^[m[K
+gmake[2]: *** [CMakeFiles/hikvision_ros2_driver.dir/build.make:76: CMakeFiles/hikvision_ros2_driver.dir/src/hikvision_ros2_driver.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/hikvision_ros2_driver.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

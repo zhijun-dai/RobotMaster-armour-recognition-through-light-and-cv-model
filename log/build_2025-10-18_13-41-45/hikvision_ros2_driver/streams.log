@@ -1,0 +1,66 @@
+[0.015s] Invoking command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver': CMAKE_PREFIX_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver:/opt/ros/jazzy:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib:/opt/ros/jazzy/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver -- -j16 -l16
+[0.119s] [ 50%] Built target hikvision_ros2_driver_node
+[0.127s] [ 75%] [32mBuilding CXX object CMakeFiles/hikvision_ros2_driver.dir/src/hikvision_ros2_driver.cpp.o[0m
+[2.320s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K In lambda function:
+[2.320s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:311:13:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+[2.321s]   311 |             [01;35m[Kif[m[K (!result.successful) result.reason = failed_msg; return result;
+[2.321s]       |             [01;35m[K^~[m[K
+[2.321s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:311:65:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+[2.321s]   311 | f (!result.successful) result.reason = failed_msg; [01;36m[Kreturn[m[K result;
+[2.321s]       |                                                    [01;36m[K^~~~~~[m[K
+[2.321s] 
+[2.336s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K In destructor ‘[01m[Kvirtual hikvision_ros2_driver::HikvisionDriver::[01;32m[K~HikvisionDriver[m[K()[m[K’:
+[2.337s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:422:5:[m[K [01;35m[Kwarning: [m[Kthis ‘[01m[Kif[m[K’ clause does not guard... [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wmisleading-indentation-Wmisleading-indentation]8;;[m[K]
+[2.337s]   422 |     [01;35m[Kif[m[K (!pImpl) return; if (pImpl->handle == nullptr) return; auto logger = get_logger();
+[2.337s]       |     [01;35m[K^~[m[K
+[2.337s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:422:25:[m[K [01;36m[Knote: [m[K...this statement, but the latter is misleadingly indented as if it were guarded by the ‘[01m[Kif[m[K’
+[2.337s]   422 |     if (!pImpl) return; [01;36m[Kif[m[K (pImpl->handle == nullptr) return; auto logger = get_logger();
+[2.337s]       |                         [01;36m[K^~[m[K
+[2.354s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K At global scope:
+[2.354s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:434:6:[m[K [01;31m[Kerror: [m[K‘[01m[KHikvisionDriver[m[K’ has not been declared
+[2.354s]   434 | void [01;31m[KHikvisionDriver[m[K::Impl::image_callback_ex(unsigned char *pData, MV_FRAME_OUT_INFO_EX *pFrameInfo, void *pUser) {
+[2.354s]       |      [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.357s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K In function ‘[01m[Kvoid[01;32m[K image_callback_ex[m[K(unsigned char*, MV_FRAME_OUT_INFO_EX*, void*)[m[K’:
+[2.357s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:435:34:[m[K [01;31m[Kerror: [m[K‘[01m[KHikvisionDriver[m[K’ does not name a type
+[2.357s]   435 |     auto node = reinterpret_cast<[01;31m[KHikvisionDriver[m[K *>(pUser);
+[2.357s]       |                                  [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.358s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:435:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K>[m[K’ before ‘[01m[K*[m[K’ token
+[2.358s]   435 |     auto node = reinterpret_cast<HikvisionDriver [01;31m[K*[m[K>(pUser);
+[2.358s]       |                                                  [01;31m[K^[m[K
+[2.358s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:435:50:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K([m[K’ before ‘[01m[K*[m[K’ token
+[2.358s]   435 |     auto node = reinterpret_cast<HikvisionDriver [01;31m[K*[m[K>(pUser);
+[2.358s]       |                                                  [01;31m[K^[m[K
+[2.358s]       |                                                  [32m[K([m[K
+[2.358s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:435:51:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+[2.359s]   435 |     auto node = reinterpret_cast<HikvisionDriver *[01;31m[K>[m[K(pUser);
+[2.359s]       |                                                   [01;31m[K^[m[K
+[2.359s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:435:59:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+[2.359s]   435 |     auto node = reinterpret_cast<HikvisionDriver *>(pUser)[01;31m[K;[m[K
+[2.359s]       |                                                           [01;31m[K^[m[K
+[2.359s]       |                                                           [32m[K)[m[K
+[2.359s] In file included from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/copy_all_parameter_values.hpp:27[m[K,
+[2.359s]                  from [01m[K/opt/ros/jazzy/include/rclcpp/rclcpp/rclcpp.hpp:171[m[K,
+[2.359s]                  from [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:4[m[K:
+[2.360s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:445:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.360s]   445 |         [01;31m[KRCLCPP_ERROR_ONCE[m[K(node->get_logger(), "image bytes exceed max available size for sensor_msgs::msg::Image");
+[2.360s]       |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.360s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:476:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.360s]   476 |         [01;31m[KRCLCPP_ERROR_ONCE[m[K(node->get_logger(), "unsupport pixel format for sensor_msgs::msg::Image: %d", (int)pFrameInfo->enPixelType);
+[2.360s]       |         [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[2.361s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:481:9:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.361s]   481 |         [01;31m[KRCLCPP_ERROR[m[K(node->get_logger(), "nFrameLen < data.size() for sensor_msgs::msg::Image, len=%d", pFrameInfo->nFrameLen);
+[2.361s]       |         [01;31m[K^~~~~~~~~~~~[m[K
+[2.361s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:[m[K At global scope:
+[2.361s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:509:1:[m[K [01;31m[Kerror: [m[K‘[01m[KHikvisionDriver[m[K’ does not name a type
+[2.361s]   509 | [01;31m[KHikvisionDriver[m[K::HikvisionDriver(const rclcpp::NodeOptions &options)
+[2.361s]       | [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.361s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:736:1:[m[K [01;31m[Kerror: [m[K‘[01m[KHikvisionDriver[m[K’ does not name a type
+[2.362s]   736 | [01;31m[KHikvisionDriver[m[K::~HikvisionDriver() {
+[2.362s]       | [01;31m[K^~~~~~~~~~~~~~~[m[K
+[2.362s] [01m[K/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver/src/hikvision_ros2_driver.cpp:747:1:[m[K [01;31m[Kerror: [m[Kexpected declaration before ‘[01m[K}[m[K’ token
+[2.362s]   747 | [01;31m[K}[m[K  // namespace hikvision_ros2_driver
+[2.362s]       | [01;31m[K^[m[K
+[4.050s] gmake[2]: *** [CMakeFiles/hikvision_ros2_driver.dir/build.make:76: CMakeFiles/hikvision_ros2_driver.dir/src/hikvision_ros2_driver.cpp.o] Error 1
+[4.050s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/hikvision_ros2_driver.dir/all] Error 2
+[4.051s] gmake: *** [Makefile:146: all] Error 2
+[4.058s] Invoked command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver' returned '2': CMAKE_PREFIX_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver:/opt/ros/jazzy:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy LD_LIBRARY_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib:/opt/ros/jazzy/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver -- -j16 -l16

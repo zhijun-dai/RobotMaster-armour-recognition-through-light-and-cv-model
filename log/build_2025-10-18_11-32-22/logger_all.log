@@ -1,0 +1,215 @@
+[0.111s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--cmake-args', '-DCMAKE_BUILD_TYPE=RelWithDebInfo', '--no-warn-unused-cli']
+[0.111s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '--no-warn-unused-cli'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7518e7d660c0>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7518e7d65eb0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7518e7d65eb0>>)
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.155s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.155s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/daizhijun/RobotMaster/hikvision_ros2_integration'
+[0.155s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.156s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.185s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_interface) by extensions ['ignore', 'ignore_ament_install']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_interface) by extension 'ignore'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_interface) by extension 'ignore_ament_install'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_interface) by extensions ['colcon_pkg']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_interface) by extension 'colcon_pkg'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_interface) by extensions ['colcon_meta']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_interface) by extension 'colcon_meta'
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_interface) by extensions ['ros']
+[0.186s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_interface) by extension 'ros'
+[0.189s] DEBUG:colcon.colcon_core.package_identification:Package 'hikvision_interface' with type 'ros.ament_cmake' and name 'hikvision_interface'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_ros2_driver) by extensions ['ignore', 'ignore_ament_install']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_ros2_driver) by extension 'ignore'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_ros2_driver) by extension 'ignore_ament_install'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_ros2_driver) by extensions ['colcon_pkg']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_ros2_driver) by extension 'colcon_pkg'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_ros2_driver) by extensions ['colcon_meta']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_ros2_driver) by extension 'colcon_meta'
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_ros2_driver) by extensions ['ros']
+[0.189s] Level 1:colcon.colcon_core.package_identification:_identify(hikvision_ros2_driver) by extension 'ros'
+[0.190s] DEBUG:colcon.colcon_core.package_identification:Package 'hikvision_ros2_driver' with type 'ros.ament_cmake' and name 'hikvision_ros2_driver'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.190s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.191s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.191s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.211s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.212s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.213s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/daizhijun/RobotMaster/hikvision_ros2_integration/install
+[0.214s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 291 installed packages in /opt/ros/jazzy
+[0.215s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_interface' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '--no-warn-unused-cli']'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_interface' build argument 'cmake_target' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_interface' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_interface' build argument 'cmake_clean_cache' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_interface' build argument 'cmake_clean_first' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_interface' build argument 'cmake_force_configure' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_interface' build argument 'ament_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_interface' build argument 'catkin_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_interface' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.249s] DEBUG:colcon.colcon_core.verb:Building package 'hikvision_interface' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface', 'merge_install': False, 'path': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_interface', 'symlink_install': False, 'test_result_base': None}
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_ros2_driver' build argument 'cmake_args' from command line to '['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '--no-warn-unused-cli']'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_ros2_driver' build argument 'cmake_target' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_ros2_driver' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_ros2_driver' build argument 'cmake_clean_cache' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_ros2_driver' build argument 'cmake_clean_first' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_ros2_driver' build argument 'cmake_force_configure' from command line to 'False'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_ros2_driver' build argument 'ament_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_ros2_driver' build argument 'catkin_cmake_args' from command line to 'None'
+[0.249s] Level 5:colcon.colcon_core.verb:set package 'hikvision_ros2_driver' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.249s] DEBUG:colcon.colcon_core.verb:Building package 'hikvision_ros2_driver' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_BUILD_TYPE=RelWithDebInfo', '--no-warn-unused-cli'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver', 'merge_install': False, 'path': '/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver', 'symlink_install': False, 'test_result_base': None}
+[0.250s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.251s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.251s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_interface' with build type 'ament_cmake'
+[0.251s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_interface'
+[0.253s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.253s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.253s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.264s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface -- -j16 -l16
+[0.775s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface -- -j16 -l16
+[0.796s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface
+[0.939s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hikvision_interface)
+[0.941s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface
+[0.945s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface' for CMake module files
+[0.946s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface' for CMake config files
+[0.947s] Level 1:colcon.colcon_core.shell:create_environment_hook('hikvision_interface', 'cmake_prefix_path')
+[0.948s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/cmake_prefix_path.ps1'
+[0.949s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/cmake_prefix_path.dsv'
+[0.950s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/cmake_prefix_path.sh'
+[0.951s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib'
+[0.951s] Level 1:colcon.colcon_core.shell:create_environment_hook('hikvision_interface', 'ld_library_path_lib')
+[0.952s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/ld_library_path_lib.ps1'
+[0.953s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/ld_library_path_lib.dsv'
+[0.953s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/ld_library_path_lib.sh'
+[0.954s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/bin'
+[0.954s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/pkgconfig/hikvision_interface.pc'
+[0.955s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages'
+[0.955s] Level 1:colcon.colcon_core.shell:create_environment_hook('hikvision_interface', 'pythonpath')
+[0.955s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/pythonpath.ps1'
+[0.956s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/pythonpath.dsv'
+[0.956s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/pythonpath.sh'
+[0.958s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/bin'
+[0.958s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/package.ps1'
+[0.960s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/package.dsv'
+[0.961s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/package.sh'
+[0.962s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/package.bash'
+[0.963s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/package.zsh'
+[0.964s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/colcon-core/packages/hikvision_interface)
+[0.965s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hikvision_interface)
+[0.965s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface' for CMake module files
+[0.966s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface' for CMake config files
+[0.967s] Level 1:colcon.colcon_core.shell:create_environment_hook('hikvision_interface', 'cmake_prefix_path')
+[0.967s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/cmake_prefix_path.ps1'
+[0.968s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/cmake_prefix_path.dsv'
+[0.968s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/cmake_prefix_path.sh'
+[0.969s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib'
+[0.969s] Level 1:colcon.colcon_core.shell:create_environment_hook('hikvision_interface', 'ld_library_path_lib')
+[0.969s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/ld_library_path_lib.ps1'
+[0.970s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/ld_library_path_lib.dsv'
+[0.970s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/ld_library_path_lib.sh'
+[0.970s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/bin'
+[0.971s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/pkgconfig/hikvision_interface.pc'
+[0.971s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages'
+[0.971s] Level 1:colcon.colcon_core.shell:create_environment_hook('hikvision_interface', 'pythonpath')
+[0.971s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/pythonpath.ps1'
+[0.972s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/pythonpath.dsv'
+[0.972s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/hook/pythonpath.sh'
+[0.973s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/bin'
+[0.974s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/package.ps1'
+[0.974s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/package.dsv'
+[0.975s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/package.sh'
+[0.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/package.bash'
+[0.976s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/hikvision_interface/package.zsh'
+[0.977s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/share/colcon-core/packages/hikvision_interface)
+[0.977s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver' with build type 'ament_cmake'
+[0.978s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_ros2_driver'
+[0.978s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.978s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.004s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver': CMAKE_PREFIX_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver:/opt/ros/jazzy:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib:/opt/ros/jazzy/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver -- -j16 -l16
+[28.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver' returned '0': CMAKE_PREFIX_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver:/opt/ros/jazzy:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib:/opt/ros/jazzy/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --build /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver -- -j16 -l16
+[28.658s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver': CMAKE_PREFIX_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver:/opt/ros/jazzy:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib:/opt/ros/jazzy/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver
+[28.709s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hikvision_ros2_driver)
+[28.710s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver' for CMake module files
+[28.711s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver' returned '0': CMAKE_PREFIX_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver:/opt/ros/jazzy:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com LD_LIBRARY_PATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib:/opt/MVS/lib/64:/opt/MVS/lib/32:/opt/MVS/lib/64:/opt/MVS/lib/32:/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib:/opt/ros/jazzy/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib PYTHONPATH=/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_interface/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages /usr/bin/cmake --install /home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_ros2_driver
+[28.711s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver' for CMake config files
+[28.712s] Level 1:colcon.colcon_core.shell:create_environment_hook('hikvision_ros2_driver', 'cmake_prefix_path')
+[28.712s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/hook/cmake_prefix_path.ps1'
+[28.713s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/hook/cmake_prefix_path.dsv'
+[28.713s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/hook/cmake_prefix_path.sh'
+[28.714s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib'
+[28.714s] Level 1:colcon.colcon_core.shell:create_environment_hook('hikvision_ros2_driver', 'ld_library_path_lib')
+[28.714s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/hook/ld_library_path_lib.ps1'
+[28.715s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/hook/ld_library_path_lib.dsv'
+[28.715s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/hook/ld_library_path_lib.sh'
+[28.716s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/bin'
+[28.716s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib/pkgconfig/hikvision_ros2_driver.pc'
+[28.716s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib/python3.12/site-packages'
+[28.716s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/bin'
+[28.717s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/package.ps1'
+[28.717s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/package.dsv'
+[28.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/package.sh'
+[28.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/package.bash'
+[28.719s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/package.zsh'
+[28.719s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/colcon-core/packages/hikvision_ros2_driver)
+[28.720s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(hikvision_ros2_driver)
+[28.720s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver' for CMake module files
+[28.720s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver' for CMake config files
+[28.721s] Level 1:colcon.colcon_core.shell:create_environment_hook('hikvision_ros2_driver', 'cmake_prefix_path')
+[28.721s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/hook/cmake_prefix_path.ps1'
+[28.721s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/hook/cmake_prefix_path.dsv'
+[28.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/hook/cmake_prefix_path.sh'
+[28.722s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib'
+[28.722s] Level 1:colcon.colcon_core.shell:create_environment_hook('hikvision_ros2_driver', 'ld_library_path_lib')
+[28.722s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/hook/ld_library_path_lib.ps1'
+[28.723s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/hook/ld_library_path_lib.dsv'
+[28.723s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/hook/ld_library_path_lib.sh'
+[28.724s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/bin'
+[28.724s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib/pkgconfig/hikvision_ros2_driver.pc'
+[28.724s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/lib/python3.12/site-packages'
+[28.724s] Level 1:colcon.colcon_core.environment:checking '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/bin'
+[28.725s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/package.ps1'
+[28.725s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/package.dsv'
+[28.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/package.sh'
+[28.726s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/package.bash'
+[28.727s] INFO:colcon.colcon_core.shell:Creating package script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/hikvision_ros2_driver/package.zsh'
+[28.727s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/hikvision_ros2_driver/share/colcon-core/packages/hikvision_ros2_driver)
+[28.727s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[28.728s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[28.728s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[28.728s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[28.739s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[28.739s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[28.740s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[28.768s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[28.768s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/local_setup.ps1'
+[28.770s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/_local_setup_util_ps1.py'
+[28.771s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/setup.ps1'
+[28.773s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/local_setup.sh'
+[28.774s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/_local_setup_util_sh.py'
+[28.774s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/setup.sh'
+[28.776s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/local_setup.bash'
+[28.776s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/setup.bash'
+[28.778s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/local_setup.zsh'
+[28.778s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/daizhijun/RobotMaster/hikvision_ros2_integration/install/setup.zsh'

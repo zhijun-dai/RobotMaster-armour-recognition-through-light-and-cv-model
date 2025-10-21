@@ -1,0 +1,6 @@
+{
+  "package_name": "hikvision_interface",
+  "non_idl_tuples": [
+    "/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_interface:msg/HikImageInfo.msg"
+  ]
+}

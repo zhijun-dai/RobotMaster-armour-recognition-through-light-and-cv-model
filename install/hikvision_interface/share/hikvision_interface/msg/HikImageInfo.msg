@@ -1,0 +1,1 @@
+/home/daizhijun/RobotMaster/hikvision_ros2_integration/hikvision_interface/msg/HikImageInfo.msg

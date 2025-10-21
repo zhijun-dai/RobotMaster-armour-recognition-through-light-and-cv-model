@@ -1,0 +1,1 @@
+/home/daizhijun/RobotMaster/hikvision_ros2_integration/build/hikvision_interface/rosidl_typesupport_fastrtps_cpp/hikvision_interface/msg/detail/hik_image_info__rosidl_typesupport_fastrtps_cpp.hpp
