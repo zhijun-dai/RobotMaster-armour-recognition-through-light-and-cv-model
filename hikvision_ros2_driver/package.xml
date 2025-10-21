@@ -4,7 +4,6 @@
   <name>hikvision_ros2_driver</name>
   <version>0.0.0</version>
   <description>ros2 driver for hikvision camera</description>
-  <maintainer email="41963211+xinyang-go@users.noreply.github.com">xinyang</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake_auto</buildtool_depend>
