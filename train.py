@@ -17,7 +17,7 @@ class DigitRecognizer(nn.Module):
     def __init__(self, num_classes=9): # num_classes 为 9 (数字 1-5, 特定图形 6outpost, 7guard, 8base, 负样本 9neg)
         super(DigitRecognizer, self).__init__()
 
-        # --- 卷积层 ---
+        # 卷积层
         # 输入通道 1 (灰度图), 输出通道 32, 卷积核 3x3, 步长 1, 填充 1
         # 输出尺寸: (20 - 3 + 2*1)/1 + 1 = 20, (28 - 3 + 2*1)/1 + 1 = 28 -> (32, 20, 28)
         self.conv1 = nn.Conv2d(1, 32, kernel_size=3, stride=1, padding=1)
@@ -25,23 +25,23 @@ class DigitRecognizer(nn.Module):
         # 输出尺寸: (20, 28) -> (64, 20, 28)
         self.conv2 = nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1)
 
-        # --- 池化层 ---
+        # 池化层
         # Max Pooling: 尺寸减半 (20x28 -> 10x14)
         # 输出尺寸: (64, 10, 14)
         self.pool = nn.MaxPool2d(kernel_size=2, stride=2, padding=0)
 
-        # --- Dropout 层 ---
+        # Dropout 层
         self.dropout1 = nn.Dropout(0.25) # 卷积后
         self.dropout2 = nn.Dropout(0.5)  # 全连接前
 
-        # --- 全连接层 ---
+        # 全连接层
         # 经过卷积和池化后，特征图尺寸为 (64, 10, 14)
         # 展平后的大小是 64 * 10 * 14 = 8960
         self.fc1 = nn.Linear(64 * 10 * 14, 128) # 输入维度修正
         self.fc2 = nn.Linear(128, 64)
         self.fc3 = nn.Linear(64, num_classes) # 输出类别数
 
-        # --- 激活函数 ---
+        # 激活函数
         self.relu = nn.ReLU()
         # <0==0, >0==x
 
@@ -51,7 +51,7 @@ class DigitRecognizer(nn.Module):
         :param x: 输入张量，形状为 (batch_size, 1, 20, 28)
         :return: 模型输出张量，形状为 (batch_size, num_classes)
         """
-        # --- 卷积和池化块 ---
+        # 卷积和池化块
         x = self.conv1(x)      # (batch, 1, 20, 28) -> (batch, 32, 20, 28)
         x = self.relu(x)
 
@@ -61,10 +61,10 @@ class DigitRecognizer(nn.Module):
         x = self.pool(x)       # (batch, 64, 20, 28) -> (batch, 64, 10, 14)
         x = self.dropout1(x)
 
-        # --- 展平 ---
+        # 展平
         x = x.view(x.size(0), -1) # (batch, 64*10*14) -> (batch, 8960)
 
-        # --- 全连接块 ---
+        # 全连接块
         x = self.fc1(x)        # (batch, 8960) -> (batch, 128)
         x = self.relu(x)
         x = self.dropout2(x)
@@ -75,7 +75,7 @@ class DigitRecognizer(nn.Module):
         return x
 
 
-# --- 自定义数据集类 ---
+# 自定义数据集类
 class ImageDataset(Dataset):
     """
     用于加载图像数据的自定义数据集类。
@@ -138,7 +138,7 @@ class ImageDataset(Dataset):
         return image, label
 
 
-# --- 训练函数 ---
+# 训练函数
 def train_model(model, train_loader, criterion, optimizer, num_epochs, device):
     """
     训练模型的函数。
@@ -153,19 +153,19 @@ def train_model(model, train_loader, criterion, optimizer, num_epochs, device):
             # 将数据和标签移动到指定设备 (CPU 或 GPU)
             data, target = data.to(device), target.to(device)
 
-            # 1. 清零梯度
+            # 清零梯度
             optimizer.zero_grad()
 
-            # 2. 前向传播,预测输出
+            # 前向传播,预测输出
             output = model(data)
 
-            # 3. 计算损失
+            # 计算损失
             loss = criterion(output, target)
 
-            # 4. 反向传播：计算梯度
+            # 反向传播：计算梯度
             loss.backward()
 
-            # 5. 更新参数
+            # 更新参数
             optimizer.step()
 
             running_loss += loss.item()
@@ -180,7 +180,7 @@ def train_model(model, train_loader, criterion, optimizer, num_epochs, device):
         epoch_acc = 100. * correct / total
         print(f'Epoch [{epoch+1}/{num_epochs}], Loss: {epoch_loss:.4f}, Acc: {epoch_acc:.2f}%')
 
-# --- 验证函数 ---
+# 验证函数
 def validate_model(model, val_loader, criterion, device):
     """
     验证模型的函数。
@@ -204,13 +204,12 @@ def validate_model(model, val_loader, criterion, device):
     print(f'Validation set: Average loss: {val_loss:.4f}, Accuracy: {val_acc:.2f}%\n')
     return val_acc # 返回验证准确率，可用于早停等策略
 
-# --- 主程序 ---
 if __name__ == "__main__":
-    # --- 1. 设置设备 ---
+    # 设置设备
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
 
-    # --- 2. 准备数据 ---
+    # 准备数据
     # 定义数据集根目录
     # 确保 'data_set' 文件夹与 'test.py' 在同一目录下
     data_root = "data_set" # 相对于 test.py 的路径
@@ -235,7 +234,7 @@ if __name__ == "__main__":
     print(f"Total images loaded: {len(full_dataset)}")
     print(f"Class mapping: {full_dataset.class_to_idx}")
 
-    # --- 3. 划分训练集和验证集 ---
+    # 划分训练集和验证集
     # 通常将数据划分为训练集和验证集，以监控模型在未见过的数据上的表现
     # 这里使用 sklearn 的 train_test_split
     indices = list(range(len(full_dataset)))
@@ -249,7 +248,7 @@ if __name__ == "__main__":
     train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
     val_loader = DataLoader(val_dataset, batch_size=batch_size, shuffle=False) # 验证集通常不打乱
 
-    # --- 4. 创建模型、损失函数和优化器 ---
+    # 创建模型、损失函数和优化器
     # 修正：num_classes 为 9 (1, 2, 3, 4, 5, 6outpost, 7guard, 8base, 9neg)
     num_classes = 9
     model = DigitRecognizer(num_classes=num_classes).to(device)
@@ -257,7 +256,7 @@ if __name__ == "__main__":
     criterion = nn.CrossEntropyLoss()
     optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-    # --- 5. 训练模型 ---
+    # 训练模型
     num_epochs = 10 # 训练轮数，你可以根据需要调整
     print("Starting Training...")
     best_val_acc = 0.0
@@ -275,6 +274,6 @@ if __name__ == "__main__":
     print("Training finished.")
     print(f"Best validation accuracy achieved: {best_val_acc:.2f}%")
 
-    # --- 6. 加载最佳模型进行最终评估 (可选) ---
+    # 加载最佳模型进行最终评估
     # model.load_state_dict(torch.load("best_digit_recognizer_model.pth"))
     # validate_model(model, val_loader, criterion, device) # 在验证集上评估最终模型
