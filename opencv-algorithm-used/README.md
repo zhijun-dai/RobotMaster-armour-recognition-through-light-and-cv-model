@@ -1,4 +1,5 @@
 # 第5次培训
+this is the opencv algorithm used for the recognition,testmain is the latest one,which may be the best.
 
 第五次培训大作业内容：
 分为四个level：
